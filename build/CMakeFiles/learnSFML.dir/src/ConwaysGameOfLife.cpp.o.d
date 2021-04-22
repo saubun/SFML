@@ -307,4 +307,6 @@ CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: \
   /Users/dameon0430/Documents/Dev/SFML/learno/SFML/include/SFML/Graphics/Glsl.inl \
   /Users/dameon0430/Documents/Dev/SFML/learno/SFML/include/SFML/Graphics/Sprite.hpp \
   /Users/dameon0430/Documents/Dev/SFML/learno/SFML/include/SFML/Graphics/Text.hpp \
-  /Users/dameon0430/Documents/Dev/SFML/learno/SFML/include/SFML/Graphics/VertexBuffer.hpp
+  /Users/dameon0430/Documents/Dev/SFML/learno/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/csignal \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h

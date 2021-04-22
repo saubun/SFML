@@ -309,8 +309,12 @@ CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: ../src/ConwaysGameOfLife.c
   ../SFML/include/SFML/Graphics/Glsl.inl \
   ../SFML/include/SFML/Graphics/Sprite.hpp \
   ../SFML/include/SFML/Graphics/Text.hpp \
-  ../SFML/include/SFML/Graphics/VertexBuffer.hpp
+  ../SFML/include/SFML/Graphics/VertexBuffer.hpp \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/csignal \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h
 
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/csignal:
 
 ../SFML/include/SFML/Graphics/VertexBuffer.hpp:
 
@@ -349,6 +353,8 @@ CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: ../src/ConwaysGameOfLife.c
 ../SFML/include/SFML/Graphics/CircleShape.hpp:
 
 ../SFML/include/SFML/Graphics/Export.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h:
 
 ../SFML/include/SFML/Graphics/BlendMode.hpp:
 
