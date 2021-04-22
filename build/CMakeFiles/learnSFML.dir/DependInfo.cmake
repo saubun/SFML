@@ -8,11 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/dameon0430/Documents/Dev/SFML/learno/main.cpp" "CMakeFiles/learnSFML.dir/main.cpp.o" "gcc" "CMakeFiles/learnSFML.dir/main.cpp.o.d"
+  "/Users/dameon0430/Documents/Dev/SFML/learno/src/main.cpp" "CMakeFiles/learnSFML.dir/src/main.cpp.o" "gcc" "CMakeFiles/learnSFML.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/dameon0430/Documents/Dev/SFML/learno/build/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
+  "/Users/dameon0430/Documents/Dev/SFML/learno/build/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
+  "/Users/dameon0430/Documents/Dev/SFML/learno/build/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

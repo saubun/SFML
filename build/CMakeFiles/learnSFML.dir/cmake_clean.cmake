@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learnSFML.dir/main.cpp.o"
-  "CMakeFiles/learnSFML.dir/main.cpp.o.d"
+  "CMakeFiles/learnSFML.dir/src/main.cpp.o"
+  "CMakeFiles/learnSFML.dir/src/main.cpp.o.d"
   "learnSFML"
   "learnSFML.pdb"
 )

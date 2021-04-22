@@ -69,29 +69,32 @@ include CMakeFiles/learnSFML.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learnSFML.dir/flags.make
 
-CMakeFiles/learnSFML.dir/main.cpp.o: CMakeFiles/learnSFML.dir/flags.make
-CMakeFiles/learnSFML.dir/main.cpp.o: ../main.cpp
-CMakeFiles/learnSFML.dir/main.cpp.o: CMakeFiles/learnSFML.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learnSFML.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learnSFML.dir/main.cpp.o -MF CMakeFiles/learnSFML.dir/main.cpp.o.d -o CMakeFiles/learnSFML.dir/main.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/main.cpp
+CMakeFiles/learnSFML.dir/src/main.cpp.o: CMakeFiles/learnSFML.dir/flags.make
+CMakeFiles/learnSFML.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/learnSFML.dir/src/main.cpp.o: CMakeFiles/learnSFML.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learnSFML.dir/src/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learnSFML.dir/src/main.cpp.o -MF CMakeFiles/learnSFML.dir/src/main.cpp.o.d -o CMakeFiles/learnSFML.dir/src/main.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/src/main.cpp
 
-CMakeFiles/learnSFML.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learnSFML.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/SFML/learno/main.cpp > CMakeFiles/learnSFML.dir/main.cpp.i
+CMakeFiles/learnSFML.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learnSFML.dir/src/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/SFML/learno/src/main.cpp > CMakeFiles/learnSFML.dir/src/main.cpp.i
 
-CMakeFiles/learnSFML.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learnSFML.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/SFML/learno/main.cpp -o CMakeFiles/learnSFML.dir/main.cpp.s
+CMakeFiles/learnSFML.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learnSFML.dir/src/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/SFML/learno/src/main.cpp -o CMakeFiles/learnSFML.dir/src/main.cpp.s
 
 # Object files for target learnSFML
 learnSFML_OBJECTS = \
-"CMakeFiles/learnSFML.dir/main.cpp.o"
+"CMakeFiles/learnSFML.dir/src/main.cpp.o"
 
 # External object files for target learnSFML
 learnSFML_EXTERNAL_OBJECTS =
 
-learnSFML: CMakeFiles/learnSFML.dir/main.cpp.o
+learnSFML: CMakeFiles/learnSFML.dir/src/main.cpp.o
 learnSFML: CMakeFiles/learnSFML.dir/build.make
+learnSFML: SFML/lib/libsfml-graphics-d.2.5.1.dylib
+learnSFML: SFML/lib/libsfml-window-d.2.5.1.dylib
+learnSFML: SFML/lib/libsfml-system-d.2.5.1.dylib
 learnSFML: CMakeFiles/learnSFML.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable learnSFML"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learnSFML.dir/link.txt --verbose=$(VERBOSE)
