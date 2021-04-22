@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/dameon0430/Documents/Dev/SFML/learno/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/learnSFML.dir/main.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/main.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/SFML/learno/main.cpp"
+}
+]
