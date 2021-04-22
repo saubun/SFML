@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/gravity.o: src/gravity.cpp.o
-.PHONY : src/gravity.o
+src/ConwaysGameOfLife.o: src/ConwaysGameOfLife.cpp.o
+.PHONY : src/ConwaysGameOfLife.o
 
 # target to build an object file
-src/gravity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.o
-.PHONY : src/gravity.cpp.o
+src/ConwaysGameOfLife.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o
+.PHONY : src/ConwaysGameOfLife.cpp.o
 
-src/gravity.i: src/gravity.cpp.i
-.PHONY : src/gravity.i
+src/ConwaysGameOfLife.i: src/ConwaysGameOfLife.cpp.i
+.PHONY : src/ConwaysGameOfLife.i
 
 # target to preprocess a source file
-src/gravity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.i
-.PHONY : src/gravity.cpp.i
+src/ConwaysGameOfLife.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.i
+.PHONY : src/ConwaysGameOfLife.cpp.i
 
-src/gravity.s: src/gravity.cpp.s
-.PHONY : src/gravity.s
+src/ConwaysGameOfLife.s: src/ConwaysGameOfLife.cpp.s
+.PHONY : src/ConwaysGameOfLife.s
 
 # target to generate assembly for a file
-src/gravity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.s
-.PHONY : src/gravity.cpp.s
+src/ConwaysGameOfLife.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.s
+.PHONY : src/ConwaysGameOfLife.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/gravity.o"
-	@echo "... src/gravity.i"
-	@echo "... src/gravity.s"
+	@echo "... src/ConwaysGameOfLife.o"
+	@echo "... src/ConwaysGameOfLife.i"
+	@echo "... src/ConwaysGameOfLife.s"
 .PHONY : help
 
 

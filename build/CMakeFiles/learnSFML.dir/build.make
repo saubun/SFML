@@ -69,28 +69,28 @@ include CMakeFiles/learnSFML.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learnSFML.dir/flags.make
 
-CMakeFiles/learnSFML.dir/src/gravity.cpp.o: CMakeFiles/learnSFML.dir/flags.make
-CMakeFiles/learnSFML.dir/src/gravity.cpp.o: ../src/gravity.cpp
-CMakeFiles/learnSFML.dir/src/gravity.cpp.o: CMakeFiles/learnSFML.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learnSFML.dir/src/gravity.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learnSFML.dir/src/gravity.cpp.o -MF CMakeFiles/learnSFML.dir/src/gravity.cpp.o.d -o CMakeFiles/learnSFML.dir/src/gravity.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/src/gravity.cpp
+CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: CMakeFiles/learnSFML.dir/flags.make
+CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: ../src/ConwaysGameOfLife.cpp
+CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o: CMakeFiles/learnSFML.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o -MF CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o.d -o CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/src/ConwaysGameOfLife.cpp
 
-CMakeFiles/learnSFML.dir/src/gravity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learnSFML.dir/src/gravity.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/SFML/learno/src/gravity.cpp > CMakeFiles/learnSFML.dir/src/gravity.cpp.i
+CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/SFML/learno/src/ConwaysGameOfLife.cpp > CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.i
 
-CMakeFiles/learnSFML.dir/src/gravity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learnSFML.dir/src/gravity.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/SFML/learno/src/gravity.cpp -o CMakeFiles/learnSFML.dir/src/gravity.cpp.s
+CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/SFML/learno/src/ConwaysGameOfLife.cpp -o CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.s
 
 # Object files for target learnSFML
 learnSFML_OBJECTS = \
-"CMakeFiles/learnSFML.dir/src/gravity.cpp.o"
+"CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o"
 
 # External object files for target learnSFML
 learnSFML_EXTERNAL_OBJECTS =
 
-learnSFML: CMakeFiles/learnSFML.dir/src/gravity.cpp.o
+learnSFML: CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o
 learnSFML: CMakeFiles/learnSFML.dir/build.make
 learnSFML: SFML/lib/libsfml-graphics-d.2.5.1.dylib
 learnSFML: SFML/lib/libsfml-window-d.2.5.1.dylib
