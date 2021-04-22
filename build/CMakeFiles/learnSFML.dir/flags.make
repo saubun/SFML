@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/dameon0430/Documents/Dev/SFML/learno/SFML/include
+CXX_INCLUDES = -I/Users/dameon0430/Documents/Dev/SFML/learno/SFML/include -I/Users/dameon0430/Documents/Dev/SFML/learno/glm
 
 CXX_FLAGSx86_64 = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
 

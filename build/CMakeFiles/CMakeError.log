@@ -1,0 +1,268 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wlogicalop failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_528c3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_528c3.dir/build.make CMakeFiles/cmTC_528c3.dir/build
+Building CXX object CMakeFiles/cmTC_528c3.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wlogicalop  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wlogical-op -MD -MT CMakeFiles/cmTC_528c3.dir/src.cxx.o -MF CMakeFiles/cmTC_528c3.dir/src.cxx.o.d -o CMakeFiles/cmTC_528c3.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+error: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Werror,-Wunknown-warning-option]
+make[1]: *** [CMakeFiles/cmTC_528c3.dir/src.cxx.o] Error 1
+make: *** [cmTC_528c3/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnopsabi failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f30e6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f30e6.dir/build.make CMakeFiles/cmTC_f30e6.dir/build
+Building CXX object CMakeFiles/cmTC_f30e6.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wnopsabi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wno-psabi -MD -MT CMakeFiles/cmTC_f30e6.dir/src.cxx.o -MF CMakeFiles/cmTC_f30e6.dir/src.cxx.o.d -o CMakeFiles/cmTC_f30e6.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+error: unknown warning option '-Wno-psabi' [-Werror,-Wunknown-warning-option]
+make[1]: *** [CMakeFiles/cmTC_f30e6.dir/src.cxx.o] Error 1
+make: *** [cmTC_f30e6/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_88a1e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88a1e.dir/build.make CMakeFiles/cmTC_88a1e.dir/build
+Building CXX object CMakeFiles/cmTC_88a1e.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_wd981  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -wd981 -MD -MT CMakeFiles/cmTC_88a1e.dir/src.cxx.o -MF CMakeFiles/cmTC_88a1e.dir/src.cxx.o.d -o CMakeFiles/cmTC_88a1e.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd981'
+make[1]: *** [CMakeFiles/cmTC_88a1e.dir/src.cxx.o] Error 1
+make: *** [cmTC_88a1e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c318a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c318a.dir/build.make CMakeFiles/cmTC_c318a.dir/build
+Building CXX object CMakeFiles/cmTC_c318a.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_wd2304  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -wd2304 -MD -MT CMakeFiles/cmTC_c318a.dir/src.cxx.o -MF CMakeFiles/cmTC_c318a.dir/src.cxx.o.d -o CMakeFiles/cmTC_c318a.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_c318a.dir/src.cxx.o] Error 1
+make: *** [cmTC_c318a/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a63e8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a63e8.dir/build.make CMakeFiles/cmTC_a63e8.dir/build
+Building CXX object CMakeFiles/cmTC_a63e8.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_STRICTANSI  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -strict-ansi -MD -MT CMakeFiles/cmTC_a63e8.dir/src.cxx.o -MF CMakeFiles/cmTC_a63e8.dir/src.cxx.o.d -o CMakeFiles/cmTC_a63e8.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-strict-ansi'
+make[1]: *** [CMakeFiles/cmTC_a63e8.dir/src.cxx.o] Error 1
+make: *** [cmTC_a63e8/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_OPENMP failed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_646b1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_646b1.dir/build.make CMakeFiles/cmTC_646b1.dir/build
+Building CXX object CMakeFiles/cmTC_646b1.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_OPENMP  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -fopenmp -MD -MT CMakeFiles/cmTC_646b1.dir/src.cxx.o -MF CMakeFiles/cmTC_646b1.dir/src.cxx.o.d -o CMakeFiles/cmTC_646b1.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_646b1.dir/src.cxx.o] Error 1
+make: *** [cmTC_646b1/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Looking for a Fortran compiler failed with the following output:
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/dameon0430/Documents/Dev/SFML/learno/build/eigen/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "/Users/dameon0430/Documents/Dev/SFML/learno/build/eigen/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+
+Performing C SOURCE FILE Test SCOTCH_Num_4 failed with the following compile output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c95e1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c95e1.dir/build.make CMakeFiles/cmTC_c95e1.dir/build
+Building C object CMakeFiles/cmTC_c95e1.dir/src.c.o
+/usr/bin/clang -DLAPACK_USE_F2C -DSCOTCH_Num_4  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_c95e1.dir/src.c.o -MF CMakeFiles/cmTC_c95e1.dir/src.c.o.d -o CMakeFiles/cmTC_c95e1.dir/src.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: 'scotch.h' file not found
+#include <scotch.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c95e1.dir/src.c.o] Error 1
+make: *** [cmTC_c95e1/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <scotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 4)
+    return 0;
+  else
+    return 1;
+}
+
+Performing C SOURCE FILE Test SCOTCH_Num_8 failed with the following compile output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bd2fe/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bd2fe.dir/build.make CMakeFiles/cmTC_bd2fe.dir/build
+Building C object CMakeFiles/cmTC_bd2fe.dir/src.c.o
+/usr/bin/clang -DLAPACK_USE_F2C -DSCOTCH_Num_8  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_bd2fe.dir/src.c.o -MF CMakeFiles/cmTC_bd2fe.dir/src.c.o.d -o CMakeFiles/cmTC_bd2fe.dir/src.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: 'scotch.h' file not found
+#include <scotch.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_bd2fe.dir/src.c.o] Error 1
+make: *** [cmTC_bd2fe/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <scotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 8)
+    return 0;
+  else
+    return 1;
+}
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e917e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e917e.dir/build.make CMakeFiles/cmTC_e917e.dir/build
+Building C object CMakeFiles/cmTC_e917e.dir/test_mpi.c.o
+/usr/bin/clang   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_e917e.dir/test_mpi.c.o -MF CMakeFiles/cmTC_e917e.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_e917e.dir/test_mpi.c.o -c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/FindMPI/test_mpi.c
+/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/FindMPI/test_mpi.c:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e917e.dir/test_mpi.c.o] Error 1
+make: *** [cmTC_e917e/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6e25b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6e25b.dir/build.make CMakeFiles/cmTC_6e25b.dir/build
+Building CXX object CMakeFiles/cmTC_6e25b.dir/test_mpi.cpp.o
+/usr/bin/clang++   -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_6e25b.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_6e25b.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_6e25b.dir/test_mpi.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/FindMPI/test_mpi.cpp
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6e25b.dir/test_mpi.cpp.o] Error 1
+make: *** [cmTC_6e25b/fast] Error 2
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cd793/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cd793.dir/build.make CMakeFiles/cmTC_cd793.dir/build
+Building C object CMakeFiles/cmTC_cd793.dir/test_mpi.c.o
+/usr/bin/clang   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_cd793.dir/test_mpi.c.o -MF CMakeFiles/cmTC_cd793.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_cd793.dir/test_mpi.c.o -c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/FindMPI/test_mpi.c
+/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/FindMPI/test_mpi.c:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cd793.dir/test_mpi.c.o] Error 1
+make: *** [cmTC_cd793/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a2e90/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a2e90.dir/build.make CMakeFiles/cmTC_a2e90.dir/build
+Building CXX object CMakeFiles/cmTC_a2e90.dir/test_mpi.cpp.o
+/usr/bin/clang++   -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_a2e90.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_a2e90.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_a2e90.dir/test_mpi.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/FindMPI/test_mpi.cpp
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a2e90.dir/test_mpi.cpp.o] Error 1
+make: *** [cmTC_a2e90/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test PTSCOTCH_Num_4 failed with the following compile output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e6052/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6052.dir/build.make CMakeFiles/cmTC_e6052.dir/build
+Building C object CMakeFiles/cmTC_e6052.dir/src.c.o
+/usr/bin/clang -DPTSCOTCH_Num_4  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_e6052.dir/src.c.o -MF CMakeFiles/cmTC_e6052.dir/src.c.o.d -o CMakeFiles/cmTC_e6052.dir/src.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: 'ptscotch.h' file not found
+#include <ptscotch.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e6052.dir/src.c.o] Error 1
+make: *** [cmTC_e6052/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <ptscotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 4)
+    return 0;
+  else
+    return 1;
+}
+
+Performing C SOURCE FILE Test PTSCOTCH_Num_8 failed with the following compile output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2e1c7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2e1c7.dir/build.make CMakeFiles/cmTC_2e1c7.dir/build
+Building C object CMakeFiles/cmTC_2e1c7.dir/src.c.o
+/usr/bin/clang -DPTSCOTCH_Num_8  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_2e1c7.dir/src.c.o -MF CMakeFiles/cmTC_2e1c7.dir/src.c.o.d -o CMakeFiles/cmTC_2e1c7.dir/src.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c
+/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: 'ptscotch.h' file not found
+#include <ptscotch.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2e1c7.dir/src.c.o] Error 1
+make: *** [cmTC_2e1c7/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <ptscotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 8)
+    return 0;
+  else
+    return 1;
+}
+

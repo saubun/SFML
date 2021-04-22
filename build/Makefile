@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/gravity.o: src/gravity.cpp.o
+.PHONY : src/gravity.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/gravity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.o
+.PHONY : src/gravity.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/gravity.i: src/gravity.cpp.i
+.PHONY : src/gravity.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/gravity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.i
+.PHONY : src/gravity.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/gravity.s: src/gravity.cpp.s
+.PHONY : src/gravity.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/gravity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.s
+.PHONY : src/gravity.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/gravity.o"
+	@echo "... src/gravity.i"
+	@echo "... src/gravity.s"
 .PHONY : help
 
 

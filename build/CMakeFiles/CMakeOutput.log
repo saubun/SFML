@@ -264,3 +264,439 @@ Parsed CXX implicit link information from above output:
   implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks]
 
 
+Performing C++ SOURCE FILE Test EIGEN_COMPILER_SUPPORT_CPP11 succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7901f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7901f.dir/build.make CMakeFiles/cmTC_7901f.dir/build
+Building CXX object CMakeFiles/cmTC_7901f.dir/src.cxx.o
+/usr/bin/clang++ -DEIGEN_COMPILER_SUPPORT_CPP11  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -std=c++11 -MD -MT CMakeFiles/cmTC_7901f.dir/src.cxx.o -MF CMakeFiles/cmTC_7901f.dir/src.cxx.o.d -o CMakeFiles/cmTC_7901f.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7901f
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7901f.dir/link.txt --verbose=1
+/usr/bin/clang++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7901f.dir/src.cxx.o -o cmTC_7901f 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4beb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a4beb.dir/build.make CMakeFiles/cmTC_a4beb.dir/build
+Building CXX object CMakeFiles/cmTC_a4beb.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_std=cpp03  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -std=c++03 -MD -MT CMakeFiles/cmTC_a4beb.dir/src.cxx.o -MF CMakeFiles/cmTC_a4beb.dir/src.cxx.o.d -o CMakeFiles/cmTC_a4beb.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a4beb
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4beb.dir/link.txt --verbose=1
+/usr/bin/clang++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a4beb.dir/src.cxx.o -o cmTC_a4beb 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test standard_math_library_linked_to_automatically succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_afc6c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_afc6c.dir/build.make CMakeFiles/cmTC_afc6c.dir/build
+Building CXX object CMakeFiles/cmTC_afc6c.dir/src.cxx.o
+/usr/bin/clang++ -Dstandard_math_library_linked_to_automatically  -std=c++03  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_afc6c.dir/src.cxx.o -MF CMakeFiles/cmTC_afc6c.dir/src.cxx.o.d -o CMakeFiles/cmTC_afc6c.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_afc6c
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afc6c.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_afc6c.dir/src.cxx.o -o cmTC_afc6c 
+
+
+Source file was:
+
+#include<cmath>
+int main(int argc, char **){
+  return int(std::sin(double(argc)) + std::log(double(argc)));
+}
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_WERROR succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cdd40/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cdd40.dir/build.make CMakeFiles/cmTC_cdd40.dir/build
+Building CXX object CMakeFiles/cmTC_cdd40.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_WERROR  -std=c++03  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Werror -MD -MT CMakeFiles/cmTC_cdd40.dir/src.cxx.o -MF CMakeFiles/cmTC_cdd40.dir/src.cxx.o.d -o CMakeFiles/cmTC_cdd40.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cdd40
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdd40.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cdd40.dir/src.cxx.o -o cmTC_cdd40 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_pedantic succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_93737/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_93737.dir/build.make CMakeFiles/cmTC_93737.dir/build
+Building CXX object CMakeFiles/cmTC_93737.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_pedantic  -std=c++03 -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -pedantic -MD -MT CMakeFiles/cmTC_93737.dir/src.cxx.o -MF CMakeFiles/cmTC_93737.dir/src.cxx.o.d -o CMakeFiles/cmTC_93737.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_93737
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93737.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_93737.dir/src.cxx.o -o cmTC_93737 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wall succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6da17/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6da17.dir/build.make CMakeFiles/cmTC_6da17.dir/build
+Building CXX object CMakeFiles/cmTC_6da17.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wall  -std=c++03 -pedantic -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wall -MD -MT CMakeFiles/cmTC_6da17.dir/src.cxx.o -MF CMakeFiles/cmTC_6da17.dir/src.cxx.o.d -o CMakeFiles/cmTC_6da17.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6da17
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da17.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6da17.dir/src.cxx.o -o cmTC_6da17 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wextra succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_23d5e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_23d5e.dir/build.make CMakeFiles/cmTC_23d5e.dir/build
+Building CXX object CMakeFiles/cmTC_23d5e.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wextra  -std=c++03 -pedantic -Wall -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wextra -MD -MT CMakeFiles/cmTC_23d5e.dir/src.cxx.o -MF CMakeFiles/cmTC_23d5e.dir/src.cxx.o.d -o CMakeFiles/cmTC_23d5e.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_23d5e
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23d5e.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_23d5e.dir/src.cxx.o -o cmTC_23d5e 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wundef succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b5b77/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b5b77.dir/build.make CMakeFiles/cmTC_b5b77.dir/build
+Building CXX object CMakeFiles/cmTC_b5b77.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wundef  -std=c++03 -pedantic -Wall -Wextra -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wundef -MD -MT CMakeFiles/cmTC_b5b77.dir/src.cxx.o -MF CMakeFiles/cmTC_b5b77.dir/src.cxx.o.d -o CMakeFiles/cmTC_b5b77.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b5b77
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5b77.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b5b77.dir/src.cxx.o -o cmTC_b5b77 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcastalign succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7fed9/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7fed9.dir/build.make CMakeFiles/cmTC_7fed9.dir/build
+Building CXX object CMakeFiles/cmTC_7fed9.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wcastalign  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wcast-align -MD -MT CMakeFiles/cmTC_7fed9.dir/src.cxx.o -MF CMakeFiles/cmTC_7fed9.dir/src.cxx.o.d -o CMakeFiles/cmTC_7fed9.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7fed9
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fed9.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7fed9.dir/src.cxx.o -o cmTC_7fed9 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcharsubscripts succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_76824/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_76824.dir/build.make CMakeFiles/cmTC_76824.dir/build
+Building CXX object CMakeFiles/cmTC_76824.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wcharsubscripts  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wchar-subscripts -MD -MT CMakeFiles/cmTC_76824.dir/src.cxx.o -MF CMakeFiles/cmTC_76824.dir/src.cxx.o.d -o CMakeFiles/cmTC_76824.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_76824
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76824.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_76824.dir/src.cxx.o -o cmTC_76824 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnonvirtualdtor succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_521a4/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_521a4.dir/build.make CMakeFiles/cmTC_521a4.dir/build
+Building CXX object CMakeFiles/cmTC_521a4.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wnonvirtualdtor  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wnon-virtual-dtor -MD -MT CMakeFiles/cmTC_521a4.dir/src.cxx.o -MF CMakeFiles/cmTC_521a4.dir/src.cxx.o.d -o CMakeFiles/cmTC_521a4.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_521a4
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_521a4.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_521a4.dir/src.cxx.o -o cmTC_521a4 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wunusedlocaltypedefs succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fca89/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fca89.dir/build.make CMakeFiles/cmTC_fca89.dir/build
+Building CXX object CMakeFiles/cmTC_fca89.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wunusedlocaltypedefs  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wunused-local-typedefs -MD -MT CMakeFiles/cmTC_fca89.dir/src.cxx.o -MF CMakeFiles/cmTC_fca89.dir/src.cxx.o.d -o CMakeFiles/cmTC_fca89.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fca89
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fca89.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fca89.dir/src.cxx.o -o cmTC_fca89 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wpointerarith succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee17d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ee17d.dir/build.make CMakeFiles/cmTC_ee17d.dir/build
+Building CXX object CMakeFiles/cmTC_ee17d.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wpointerarith  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wpointer-arith -MD -MT CMakeFiles/cmTC_ee17d.dir/src.cxx.o -MF CMakeFiles/cmTC_ee17d.dir/src.cxx.o.d -o CMakeFiles/cmTC_ee17d.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee17d
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee17d.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee17d.dir/src.cxx.o -o cmTC_ee17d 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wwritestrings succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_94b9b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_94b9b.dir/build.make CMakeFiles/cmTC_94b9b.dir/build
+Building CXX object CMakeFiles/cmTC_94b9b.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wwritestrings  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wwrite-strings -MD -MT CMakeFiles/cmTC_94b9b.dir/src.cxx.o -MF CMakeFiles/cmTC_94b9b.dir/src.cxx.o.d -o CMakeFiles/cmTC_94b9b.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_94b9b
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94b9b.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_94b9b.dir/src.cxx.o -o cmTC_94b9b 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wformatsecurity succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fdad6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fdad6.dir/build.make CMakeFiles/cmTC_fdad6.dir/build
+Building CXX object CMakeFiles/cmTC_fdad6.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wformatsecurity  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wformat-security -MD -MT CMakeFiles/cmTC_fdad6.dir/src.cxx.o -MF CMakeFiles/cmTC_fdad6.dir/src.cxx.o.d -o CMakeFiles/cmTC_fdad6.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fdad6
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdad6.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fdad6.dir/src.cxx.o -o cmTC_fdad6 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19185/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_19185.dir/build.make CMakeFiles/cmTC_19185.dir/build
+Building CXX object CMakeFiles/cmTC_19185.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wshorten64to32  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_19185.dir/src.cxx.o -MF CMakeFiles/cmTC_19185.dir/src.cxx.o.d -o CMakeFiles/cmTC_19185.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_19185
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19185.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_19185.dir/src.cxx.o -o cmTC_19185 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ba118/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ba118.dir/build.make CMakeFiles/cmTC_ba118.dir/build
+Building CXX object CMakeFiles/cmTC_ba118.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wenumconversion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wenum-conversion -MD -MT CMakeFiles/cmTC_ba118.dir/src.cxx.o -MF CMakeFiles/cmTC_ba118.dir/src.cxx.o.d -o CMakeFiles/cmTC_ba118.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ba118
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba118.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ba118.dir/src.cxx.o -o cmTC_ba118 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_440af/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_440af.dir/build.make CMakeFiles/cmTC_440af.dir/build
+Building CXX object CMakeFiles/cmTC_440af.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wcpp11extensions  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wc++11-extensions -MD -MT CMakeFiles/cmTC_440af.dir/src.cxx.o -MF CMakeFiles/cmTC_440af.dir/src.cxx.o.d -o CMakeFiles/cmTC_440af.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_440af
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_440af.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_440af.dir/src.cxx.o -o cmTC_440af 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wdoublepromotion succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dd8ff/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dd8ff.dir/build.make CMakeFiles/cmTC_dd8ff.dir/build
+Building CXX object CMakeFiles/cmTC_dd8ff.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wdoublepromotion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wdouble-promotion -MD -MT CMakeFiles/cmTC_dd8ff.dir/src.cxx.o -MF CMakeFiles/cmTC_dd8ff.dir/src.cxx.o.d -o CMakeFiles/cmTC_dd8ff.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dd8ff
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd8ff.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dd8ff.dir/src.cxx.o -o cmTC_dd8ff 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshadow succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7845c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7845c.dir/build.make CMakeFiles/cmTC_7845c.dir/build
+Building CXX object CMakeFiles/cmTC_7845c.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wshadow  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wshadow -MD -MT CMakeFiles/cmTC_7845c.dir/src.cxx.o -MF CMakeFiles/cmTC_7845c.dir/src.cxx.o.d -o CMakeFiles/cmTC_7845c.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7845c
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7845c.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7845c.dir/src.cxx.o -o cmTC_7845c 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnovariadicmacros succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_13243/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_13243.dir/build.make CMakeFiles/cmTC_13243.dir/build
+Building CXX object CMakeFiles/cmTC_13243.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wnovariadicmacros  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wno-variadic-macros -MD -MT CMakeFiles/cmTC_13243.dir/src.cxx.o -MF CMakeFiles/cmTC_13243.dir/src.cxx.o.d -o CMakeFiles/cmTC_13243.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_13243
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13243.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_13243.dir/src.cxx.o -o cmTC_13243 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnolonglong succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b48ff/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b48ff.dir/build.make CMakeFiles/cmTC_b48ff.dir/build
+Building CXX object CMakeFiles/cmTC_b48ff.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Wnolonglong  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Wno-long-long -MD -MT CMakeFiles/cmTC_b48ff.dir/src.cxx.o -MF CMakeFiles/cmTC_b48ff.dir/src.cxx.o.d -o CMakeFiles/cmTC_b48ff.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b48ff
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b48ff.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b48ff.dir/src.cxx.o -o cmTC_b48ff 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fnochecknew succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_47707/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_47707.dir/build.make CMakeFiles/cmTC_47707.dir/build
+Building CXX object CMakeFiles/cmTC_47707.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_fnochecknew  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -fno-check-new -MD -MT CMakeFiles/cmTC_47707.dir/src.cxx.o -MF CMakeFiles/cmTC_47707.dir/src.cxx.o.d -o CMakeFiles/cmTC_47707.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_47707
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47707.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_47707.dir/src.cxx.o -o cmTC_47707 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fnocommon succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b2bc7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b2bc7.dir/build.make CMakeFiles/cmTC_b2bc7.dir/build
+Building CXX object CMakeFiles/cmTC_b2bc7.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_fnocommon  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -fno-common -MD -MT CMakeFiles/cmTC_b2bc7.dir/src.cxx.o -MF CMakeFiles/cmTC_b2bc7.dir/src.cxx.o.d -o CMakeFiles/cmTC_b2bc7.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b2bc7
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2bc7.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b2bc7.dir/src.cxx.o -o cmTC_b2bc7 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fstrictaliasing succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_26bbe/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_26bbe.dir/build.make CMakeFiles/cmTC_26bbe.dir/build
+Building CXX object CMakeFiles/cmTC_26bbe.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_fstrictaliasing  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_26bbe.dir/src.cxx.o -MF CMakeFiles/cmTC_26bbe.dir/src.cxx.o.d -o CMakeFiles/cmTC_26bbe.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_26bbe
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26bbe.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_26bbe.dir/src.cxx.o -o cmTC_26bbe 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1c11d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1c11d.dir/build.make CMakeFiles/cmTC_1c11d.dir/build
+Building CXX object CMakeFiles/cmTC_1c11d.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_Qunusedarguments  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -Qunused-arguments -MD -MT CMakeFiles/cmTC_1c11d.dir/src.cxx.o -MF CMakeFiles/cmTC_1c11d.dir/src.cxx.o.d -o CMakeFiles/cmTC_1c11d.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1c11d
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c11d.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1c11d.dir/src.cxx.o -o cmTC_1c11d 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_ansi succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_158a6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_158a6.dir/build.make CMakeFiles/cmTC_158a6.dir/build
+Building CXX object CMakeFiles/cmTC_158a6.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_ansi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -ansi -MD -MT CMakeFiles/cmTC_158a6.dir/src.cxx.o -MF CMakeFiles/cmTC_158a6.dir/src.cxx.o.d -o CMakeFiles/cmTC_158a6.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_158a6
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_158a6.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -Werror -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_158a6.dir/src.cxx.o -o cmTC_158a6 
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cd5a5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cd5a5.dir/build.make CMakeFiles/cmTC_cd5a5.dir/build
+Building C object CMakeFiles/cmTC_cd5a5.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_cd5a5.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_cd5a5.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_cd5a5.dir/CheckIncludeFile.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cd5a5
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd5a5.dir/link.txt --verbose=1
+/usr/bin/clang  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cd5a5.dir/CheckIncludeFile.c.o -o cmTC_cd5a5 
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aaf7c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_aaf7c.dir/build.make CMakeFiles/cmTC_aaf7c.dir/build
+Building C object CMakeFiles/cmTC_aaf7c.dir/src.c.o
+/usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_aaf7c.dir/src.c.o -MF CMakeFiles/cmTC_aaf7c.dir/src.c.o.d -o CMakeFiles/cmTC_aaf7c.dir/src.c.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aaf7c
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaf7c.dir/link.txt --verbose=1
+/usr/bin/clang  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_aaf7c.dir/src.c.o -o cmTC_aaf7c 
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_af8b7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_af8b7.dir/build.make CMakeFiles/cmTC_af8b7.dir/build
+Building C object CMakeFiles/cmTC_af8b7.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -DCHECK_FUNCTION_EXISTS=sgemm_ -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_af8b7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_af8b7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_af8b7.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_af8b7
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af8b7.dir/link.txt --verbose=1
+/usr/bin/clang  -DCHECK_FUNCTION_EXISTS=sgemm_ -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_af8b7.dir/CheckFunctionExists.c.o -o cmTC_af8b7  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib/libblas.tbd 
+
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2aca8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2aca8.dir/build.make CMakeFiles/cmTC_2aca8.dir/build
+Building C object CMakeFiles/cmTC_2aca8.dir/CheckFunctionExists.c.o
+/usr/bin/clang -DLAPACK_USE_F2C  -DCHECK_FUNCTION_EXISTS=cheev_ -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -MD -MT CMakeFiles/cmTC_2aca8.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2aca8.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2aca8.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2aca8
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2aca8.dir/link.txt --verbose=1
+/usr/bin/clang  -DCHECK_FUNCTION_EXISTS=cheev_ -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2aca8.dir/CheckFunctionExists.c.o -o cmTC_2aca8  -framework Accelerate /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib/libblas.tbd 
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_FASTMATH succeeded with the following output:
+Change Dir: /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_107c2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_107c2.dir/build.make CMakeFiles/cmTC_107c2.dir/build
+Building CXX object CMakeFiles/cmTC_107c2.dir/src.cxx.o
+/usr/bin/clang++ -DCOMPILER_SUPPORT_FASTMATH  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -ffast-math -MD -MT CMakeFiles/cmTC_107c2.dir/src.cxx.o -MF CMakeFiles/cmTC_107c2.dir/src.cxx.o.d -o CMakeFiles/cmTC_107c2.dir/src.cxx.o -c /Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_107c2
+/usr/local/Cellar/cmake/3.20.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_107c2.dir/link.txt --verbose=1
+/usr/bin/clang++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_107c2.dir/src.cxx.o -o cmTC_107c2 
+
+
+Source file was:
+int main() { return 0; }
