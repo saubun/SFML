@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/particleTest.o: src/particleTest.cpp.o
-.PHONY : src/particleTest.o
+src/snow.o: src/snow.cpp.o
+.PHONY : src/snow.o
 
 # target to build an object file
-src/particleTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.o
-.PHONY : src/particleTest.cpp.o
+src/snow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.o
+.PHONY : src/snow.cpp.o
 
-src/particleTest.i: src/particleTest.cpp.i
-.PHONY : src/particleTest.i
+src/snow.i: src/snow.cpp.i
+.PHONY : src/snow.i
 
 # target to preprocess a source file
-src/particleTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.i
-.PHONY : src/particleTest.cpp.i
+src/snow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.i
+.PHONY : src/snow.cpp.i
 
-src/particleTest.s: src/particleTest.cpp.s
-.PHONY : src/particleTest.s
+src/snow.s: src/snow.cpp.s
+.PHONY : src/snow.s
 
 # target to generate assembly for a file
-src/particleTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.s
-.PHONY : src/particleTest.cpp.s
+src/snow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.s
+.PHONY : src/snow.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/particleTest.o"
-	@echo "... src/particleTest.i"
-	@echo "... src/particleTest.s"
+	@echo "... src/snow.o"
+	@echo "... src/snow.i"
+	@echo "... src/snow.s"
 .PHONY : help
 
 

@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/dameon0430/Documents/Dev/SFML/learno/build",
-  "command": "/usr/bin/clang++  -I/Users/dameon0430/Documents/Dev/SFML/learno/SFML/include -I/Users/dameon0430/Documents/Dev/SFML/learno/glm -I/Users/dameon0430/Documents/Dev/SFML/learno/include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/learnSFML.dir/src/particleTest.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/src/particleTest.cpp",
-  "file": "/Users/dameon0430/Documents/Dev/SFML/learno/src/particleTest.cpp"
+  "command": "/usr/bin/clang++  -I/Users/dameon0430/Documents/Dev/SFML/learno/SFML/include -I/Users/dameon0430/Documents/Dev/SFML/learno/glm -I/Users/dameon0430/Documents/Dev/SFML/learno/include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/learnSFML.dir/src/snow.cpp.o -c /Users/dameon0430/Documents/Dev/SFML/learno/src/snow.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/SFML/learno/src/snow.cpp"
 },
 {
   "directory": "/Users/dameon0430/Documents/Dev/SFML/learno/build/SFML/src/SFML/System",
