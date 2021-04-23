@@ -33,7 +33,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -49,9 +49,15 @@
 				"parent" : 0
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -77,6 +83,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "/Users/dameon0430/Documents/Dev/SFML/learno/glm"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/dameon0430/Documents/Dev/SFML/learno/include"
 				}
 			],
 			"language" : "CXX",
@@ -84,7 +94,7 @@
 			{
 				"backtraces" : 
 				[
-					5
+					6
 				],
 				"standard" : "17"
 			},
@@ -98,11 +108,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
+			"id" : "sfml-window::@0daf25d7b5dd386fd904"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@0daf25d7b5dd386fd904"
+			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
 		},
 		{
 			"backtrace" : 2,

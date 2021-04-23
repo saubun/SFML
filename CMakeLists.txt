@@ -14,6 +14,7 @@ add_executable(learnSFML ${SOURCES})
 
 target_include_directories(learnSFML PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/SFML/include)
 target_include_directories(learnSFML PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glm/)
+target_include_directories(learnSFML PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/)
 
 
 target_link_libraries(learnSFML
