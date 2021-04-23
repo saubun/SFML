@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o"
-  "CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o.d"
+  "CMakeFiles/learnSFML.dir/src/particleTest.cpp.o"
+  "CMakeFiles/learnSFML.dir/src/particleTest.cpp.o.d"
   "learnSFML"
   "learnSFML.pdb"
 )

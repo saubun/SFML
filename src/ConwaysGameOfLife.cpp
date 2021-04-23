@@ -8,7 +8,7 @@ unsigned int SCR_HEIGHT = 768;
 
 unsigned int FPS = 10;
 
-unsigned int MARGIN = 1;
+unsigned int MARGIN = 0;
 unsigned int SIZE = 20;
 
 int main()
@@ -69,6 +69,20 @@ int main()
                         for (unsigned int y = 0; y < rows; y++)
                         {
                             grid.at(x).at(y) = 0;
+                        }
+                    }
+                }
+
+                // Random cells
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
+                {
+                    for (unsigned int x = 0; x < cols; x++)
+                    {
+                        for (unsigned int y = 0; y < rows; y++)
+                        {
+                            srand(ceil(clock.getElapsedTime().asMilliseconds()));
+                            unsigned int randomNum = rand() % 2;
+                            grid.at(x).at(y) = randomNum;
                         }
                     }
                 }
@@ -135,10 +149,7 @@ int main()
                         {
                             try
                             {
-                                if (grid.at(x + i).at(y + j))
-                                {
-                                    sum++;
-                                }
+                                sum += grid.at(x + i).at(y + j);
                             }
                             catch (const std::exception &e)
                             {

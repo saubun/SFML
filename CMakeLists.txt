@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-    src/ConwaysGameOfLife.cpp
+    src/particleTest.cpp
 )
 
 add_executable(learnSFML ${SOURCES})

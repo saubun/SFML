@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/ConwaysGameOfLife.o: src/ConwaysGameOfLife.cpp.o
-.PHONY : src/ConwaysGameOfLife.o
+src/particleTest.o: src/particleTest.cpp.o
+.PHONY : src/particleTest.o
 
 # target to build an object file
-src/ConwaysGameOfLife.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.o
-.PHONY : src/ConwaysGameOfLife.cpp.o
+src/particleTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.o
+.PHONY : src/particleTest.cpp.o
 
-src/ConwaysGameOfLife.i: src/ConwaysGameOfLife.cpp.i
-.PHONY : src/ConwaysGameOfLife.i
+src/particleTest.i: src/particleTest.cpp.i
+.PHONY : src/particleTest.i
 
 # target to preprocess a source file
-src/ConwaysGameOfLife.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.i
-.PHONY : src/ConwaysGameOfLife.cpp.i
+src/particleTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.i
+.PHONY : src/particleTest.cpp.i
 
-src/ConwaysGameOfLife.s: src/ConwaysGameOfLife.cpp.s
-.PHONY : src/ConwaysGameOfLife.s
+src/particleTest.s: src/particleTest.cpp.s
+.PHONY : src/particleTest.s
 
 # target to generate assembly for a file
-src/ConwaysGameOfLife.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/ConwaysGameOfLife.cpp.s
-.PHONY : src/ConwaysGameOfLife.cpp.s
+src/particleTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/particleTest.cpp.s
+.PHONY : src/particleTest.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/ConwaysGameOfLife.o"
-	@echo "... src/ConwaysGameOfLife.i"
-	@echo "... src/ConwaysGameOfLife.s"
+	@echo "... src/particleTest.o"
+	@echo "... src/particleTest.i"
+	@echo "... src/particleTest.s"
 .PHONY : help
 
 
