@@ -40,7 +40,7 @@ int main()
 
     // Init font
     sf::Font font;
-    font.loadFromFile("../res/larabiefont.ttf");
+    font.loadFromFile("res/larabiefont.ttf");
 
     // Init text
     sf::Text screenText;
@@ -121,24 +121,8 @@ int main()
             // Draw
             window.draw(particles.at(x));
 
-            // Determine particle behavior type
-            enum BEHAVIOR_TYPES
-            {
-                EXCITED,
-                SLOW,
-                SPEED
-            };
-            int behavior;
-            sf::Color color = particles.at(x).getFillColor();
-            if (color == sf::Color::Blue)
-                behavior = EXCITED;
-            else if (color == sf::Color::Red)
-                behavior = SLOW;
-            else if (color == sf::Color::Green)
-                behavior = SPEED;
-
             // Logic for particle behavior
-            if (behavior == EXCITED)
+            if (particles.at(x).getFillColor() == sf::Color::Blue)
             {
                 // Choose random direction
                 float num1 = Random::get(-100.0f, 100.0f);
@@ -147,7 +131,7 @@ int main()
                 // Move
                 particles.at(x).move(num1 * deltaTime, num2 * deltaTime);
             }
-            else if (behavior == SLOW)
+            else if (particles.at(x).getFillColor() == sf::Color::Red)
             {
                 // Choose random direction
                 float num1 = Random::get(-20.0f, 20.0f);
@@ -156,7 +140,7 @@ int main()
                 // Move
                 particles.at(x).move(num1 * deltaTime, num2 * deltaTime);
             }
-            else if (behavior == SPEED)
+            else if (particles.at(x).getFillColor() == sf::Color::Green)
             {
                 // Choose random direction
                 float num1 = Random::get(-500.0f, 500.0f);
