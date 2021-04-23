@@ -310,33 +310,394 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
   ../SFML/include/SFML/Graphics/Sprite.hpp \
   ../SFML/include/SFML/Graphics/Text.hpp \
   ../SFML/include/SFML/Graphics/VertexBuffer.hpp \
+  ../glm/glm/glm.hpp \
+  ../glm/glm/detail/_fixes.hpp \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cmath \
+  ../glm/glm/detail/setup.hpp \
+  ../glm/glm/simd/platform.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cfloat \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/float.h \
+  ../glm/glm/fwd.hpp \
+  ../glm/glm/detail/qualifier.hpp \
+  ../glm/glm/vec2.hpp \
+  ../glm/glm/ext/vector_bool2.hpp \
+  ../glm/glm/detail/type_vec2.hpp \
+  ../glm/glm/detail/type_vec2.inl \
+  ../glm/glm/detail/compute_vector_relational.hpp \
+  ../glm/glm/ext/vector_bool2_precision.hpp \
+  ../glm/glm/ext/vector_float2.hpp \
+  ../glm/glm/ext/vector_float2_precision.hpp \
+  ../glm/glm/ext/vector_double2.hpp \
+  ../glm/glm/ext/vector_double2_precision.hpp \
+  ../glm/glm/ext/vector_int2.hpp \
+  ../glm/glm/ext/vector_int2_sized.hpp \
+  ../glm/glm/ext/vector_int2.hpp \
+  ../glm/glm/ext/scalar_int_sized.hpp \
+  ../glm/glm/detail/setup.hpp \
+  ../glm/glm/ext/vector_uint2.hpp \
+  ../glm/glm/ext/vector_uint2_sized.hpp \
+  ../glm/glm/ext/vector_uint2.hpp \
+  ../glm/glm/ext/scalar_uint_sized.hpp \
+  ../glm/glm/vec3.hpp \
+  ../glm/glm/ext/vector_bool3.hpp \
+  ../glm/glm/detail/type_vec3.hpp \
+  ../glm/glm/detail/type_vec3.inl \
+  ../glm/glm/detail/compute_vector_relational.hpp \
+  ../glm/glm/ext/vector_bool3_precision.hpp \
+  ../glm/glm/ext/vector_float3.hpp \
+  ../glm/glm/ext/vector_float3_precision.hpp \
+  ../glm/glm/ext/vector_double3.hpp \
+  ../glm/glm/ext/vector_double3_precision.hpp \
+  ../glm/glm/ext/vector_int3.hpp \
+  ../glm/glm/ext/vector_int3_sized.hpp \
+  ../glm/glm/ext/vector_int3.hpp \
+  ../glm/glm/ext/vector_uint3.hpp \
+  ../glm/glm/ext/vector_uint3_sized.hpp \
+  ../glm/glm/ext/vector_uint3.hpp \
+  ../glm/glm/vec4.hpp \
+  ../glm/glm/ext/vector_bool4.hpp \
+  ../glm/glm/detail/type_vec4.hpp \
+  ../glm/glm/detail/type_vec4.inl \
+  ../glm/glm/ext/vector_bool4_precision.hpp \
+  ../glm/glm/ext/vector_float4.hpp \
+  ../glm/glm/ext/vector_float4_precision.hpp \
+  ../glm/glm/ext/vector_double4.hpp \
+  ../glm/glm/ext/vector_double4_precision.hpp \
+  ../glm/glm/ext/vector_int4.hpp \
+  ../glm/glm/ext/vector_int4_sized.hpp \
+  ../glm/glm/ext/vector_int4.hpp \
+  ../glm/glm/ext/vector_uint4.hpp \
+  ../glm/glm/ext/vector_uint4_sized.hpp \
+  ../glm/glm/ext/vector_uint4.hpp \
+  ../glm/glm/mat2x2.hpp \
+  ../glm/glm/ext/matrix_double2x2.hpp \
+  ../glm/glm/detail/type_mat2x2.hpp \
+  ../glm/glm/detail/type_vec2.hpp \
+  ../glm/glm/detail/type_mat2x2.inl \
+  ../glm/glm/matrix.hpp \
+  ../glm/glm/mat2x3.hpp \
+  ../glm/glm/ext/matrix_double2x3.hpp \
+  ../glm/glm/detail/type_mat2x3.hpp \
+  ../glm/glm/detail/type_vec3.hpp \
+  ../glm/glm/detail/type_mat2x3.inl \
+  ../glm/glm/ext/matrix_double2x3_precision.hpp \
+  ../glm/glm/ext/matrix_float2x3.hpp \
+  ../glm/glm/ext/matrix_float2x3_precision.hpp \
+  ../glm/glm/mat2x4.hpp \
+  ../glm/glm/ext/matrix_double2x4.hpp \
+  ../glm/glm/detail/type_mat2x4.hpp \
+  ../glm/glm/detail/type_vec4.hpp \
+  ../glm/glm/detail/type_mat2x4.inl \
+  ../glm/glm/ext/matrix_double2x4_precision.hpp \
+  ../glm/glm/ext/matrix_float2x4.hpp \
+  ../glm/glm/ext/matrix_float2x4_precision.hpp \
+  ../glm/glm/mat3x2.hpp \
+  ../glm/glm/ext/matrix_double3x2.hpp \
+  ../glm/glm/detail/type_mat3x2.hpp \
+  ../glm/glm/detail/type_mat3x2.inl \
+  ../glm/glm/ext/matrix_double3x2_precision.hpp \
+  ../glm/glm/ext/matrix_float3x2.hpp \
+  ../glm/glm/ext/matrix_float3x2_precision.hpp \
+  ../glm/glm/mat3x3.hpp \
+  ../glm/glm/ext/matrix_double3x3.hpp \
+  ../glm/glm/detail/type_mat3x3.hpp \
+  ../glm/glm/detail/type_mat3x3.inl \
+  ../glm/glm/ext/matrix_double3x3_precision.hpp \
+  ../glm/glm/ext/matrix_float3x3.hpp \
+  ../glm/glm/ext/matrix_float3x3_precision.hpp \
+  ../glm/glm/mat3x4.hpp \
+  ../glm/glm/ext/matrix_double3x4.hpp \
+  ../glm/glm/detail/type_mat3x4.hpp \
+  ../glm/glm/detail/type_mat3x4.inl \
+  ../glm/glm/ext/matrix_double3x4_precision.hpp \
+  ../glm/glm/ext/matrix_float3x4.hpp \
+  ../glm/glm/ext/matrix_float3x4_precision.hpp \
+  ../glm/glm/mat4x2.hpp \
+  ../glm/glm/ext/matrix_double4x2.hpp \
+  ../glm/glm/detail/type_mat4x2.hpp \
+  ../glm/glm/detail/type_mat4x2.inl \
+  ../glm/glm/ext/matrix_double4x2_precision.hpp \
+  ../glm/glm/ext/matrix_float4x2.hpp \
+  ../glm/glm/ext/matrix_float4x2_precision.hpp \
+  ../glm/glm/mat4x3.hpp \
+  ../glm/glm/ext/matrix_double4x3.hpp \
+  ../glm/glm/detail/type_mat4x3.hpp \
+  ../glm/glm/detail/type_mat4x3.inl \
+  ../glm/glm/ext/matrix_double4x3_precision.hpp \
+  ../glm/glm/ext/matrix_float4x3.hpp \
+  ../glm/glm/ext/matrix_float4x3_precision.hpp \
+  ../glm/glm/mat4x4.hpp \
+  ../glm/glm/ext/matrix_double4x4.hpp \
+  ../glm/glm/detail/type_mat4x4.hpp \
+  ../glm/glm/detail/type_mat4x4.inl \
+  ../glm/glm/ext/matrix_double4x4_precision.hpp \
+  ../glm/glm/ext/matrix_float4x4.hpp \
+  ../glm/glm/ext/matrix_float4x4_precision.hpp \
+  ../glm/glm/detail/func_matrix.inl \
+  ../glm/glm/geometric.hpp \
+  ../glm/glm/detail/func_geometric.inl \
+  ../glm/glm/exponential.hpp \
+  ../glm/glm/detail/type_vec1.hpp \
+  ../glm/glm/detail/type_vec1.inl \
+  ../glm/glm/detail/func_exponential.inl \
+  ../glm/glm/vector_relational.hpp \
+  ../glm/glm/detail/func_vector_relational.inl \
+  ../glm/glm/detail/_vectorize.hpp \
+  ../glm/glm/common.hpp \
+  ../glm/glm/detail/func_common.inl \
+  ../glm/glm/detail/compute_common.hpp \
+  ../glm/glm/ext/matrix_double2x2_precision.hpp \
+  ../glm/glm/ext/matrix_float2x2.hpp \
+  ../glm/glm/ext/matrix_float2x2_precision.hpp \
+  ../glm/glm/trigonometric.hpp \
+  ../glm/glm/detail/func_trigonometric.inl \
+  ../glm/glm/exponential.hpp \
+  ../glm/glm/common.hpp \
+  ../glm/glm/packing.hpp \
+  ../glm/glm/detail/func_packing.inl \
+  ../glm/glm/detail/type_half.hpp \
+  ../glm/glm/detail/type_half.inl \
+  ../glm/glm/geometric.hpp \
+  ../glm/glm/matrix.hpp \
+  ../glm/glm/vector_relational.hpp \
+  ../glm/glm/integer.hpp \
+  ../glm/glm/detail/func_integer.inl \
   ../include/random.hpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/random \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric
 
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/cmath:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/random:
 
 ../include/random.hpp:
+
+../glm/glm/detail/func_integer.inl:
+
+../glm/glm/integer.hpp:
+
+../glm/glm/detail/type_half.inl:
+
+../glm/glm/packing.hpp:
+
+../glm/glm/trigonometric.hpp:
+
+../glm/glm/ext/matrix_float2x2_precision.hpp:
+
+../glm/glm/ext/matrix_float2x2.hpp:
+
+../glm/glm/ext/matrix_double2x2_precision.hpp:
+
+../glm/glm/detail/func_common.inl:
+
+../glm/glm/common.hpp:
+
+../glm/glm/detail/_vectorize.hpp:
+
+../glm/glm/vector_relational.hpp:
+
+../glm/glm/detail/func_exponential.inl:
+
+../glm/glm/detail/type_vec1.inl:
+
+../glm/glm/detail/type_vec1.hpp:
+
+../glm/glm/exponential.hpp:
+
+../glm/glm/ext/matrix_float4x4_precision.hpp:
+
+../glm/glm/ext/matrix_float4x4.hpp:
+
+../glm/glm/ext/matrix_double4x4_precision.hpp:
+
+../glm/glm/detail/type_mat4x4.inl:
+
+../glm/glm/ext/matrix_double4x4.hpp:
+
+../glm/glm/ext/matrix_float4x3_precision.hpp:
+
+../glm/glm/detail/func_trigonometric.inl:
+
+../glm/glm/ext/matrix_float4x3.hpp:
+
+../glm/glm/detail/type_mat4x3.inl:
+
+../glm/glm/ext/matrix_double4x3.hpp:
+
+../glm/glm/mat4x3.hpp:
+
+../glm/glm/ext/matrix_float4x2_precision.hpp:
+
+../glm/glm/ext/matrix_float4x2.hpp:
+
+../glm/glm/detail/type_mat4x2.inl:
+
+../glm/glm/detail/type_mat4x2.hpp:
+
+../glm/glm/ext/matrix_double4x2.hpp:
+
+../glm/glm/ext/matrix_float3x4_precision.hpp:
+
+../glm/glm/ext/matrix_double3x4_precision.hpp:
+
+../SFML/include/SFML/Graphics/RenderTexture.hpp:
+
+../glm/glm/ext/matrix_double3x4.hpp:
+
+../glm/glm/detail/type_mat3x3.inl:
+
+../glm/glm/detail/type_mat3x3.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:
+
+../glm/glm/mat3x3.hpp:
+
+../glm/glm/ext/matrix_double3x2_precision.hpp:
+
+../glm/glm/detail/type_mat3x2.inl:
+
+../glm/glm/detail/type_mat2x4.inl:
+
+../glm/glm/detail/type_mat2x4.hpp:
+
+../glm/glm/mat2x4.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/limits.h:
+
+../glm/glm/ext/matrix_float2x3_precision.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/limits:
+
+../glm/glm/ext/vector_uint4.hpp:
+
+../glm/glm/ext/vector_int4.hpp:
+
+../glm/glm/vec4.hpp:
+
+../SFML/include/SFML/Window/Clipboard.hpp:
+
+../glm/glm/ext/vector_uint3.hpp:
+
+../glm/glm/ext/vector_double3_precision.hpp:
+
+../glm/glm/ext/matrix_double3x2.hpp:
+
+../glm/glm/ext/vector_float4_precision.hpp:
+
+../glm/glm/ext/vector_double3.hpp:
+
+../glm/glm/ext/vector_float3.hpp:
+
+../glm/glm/ext/vector_bool3_precision.hpp:
+
+../glm/glm/ext/vector_bool3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_stdio.h:
+
+../glm/glm/ext/vector_int2.hpp:
+
+../glm/glm/ext/vector_float2.hpp:
+
+../glm/glm/detail/compute_vector_relational.hpp:
+
+../glm/glm/detail/type_vec2.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/assert.h:
+
+../glm/glm/ext/matrix_double2x4_precision.hpp:
+
+../glm/glm/detail/type_vec2.hpp:
+
+../glm/glm/detail/qualifier.hpp:
+
+../glm/glm/ext/matrix_double4x2_precision.hpp:
+
+../glm/glm/simd/platform.h:
+
+../glm/glm/fwd.hpp:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/float.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/float.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_ctype.h:
+
+../glm/glm/ext/matrix_float3x2.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cfloat:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/resource.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cmath:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/climits:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread/pthread_impl.h:
+
+../glm/glm/detail/_fixes.hpp:
+
+../glm/glm/mat3x2.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:
+
+../glm/glm/ext/matrix_double2x3_precision.hpp:
+
+../glm/glm/detail/func_vector_relational.inl:
 
 ../SFML/include/SFML/Graphics/VertexBuffer.hpp:
 
 ../SFML/include/SFML/Graphics/Text.hpp:
 
+../glm/glm/mat4x2.hpp:
+
+../SFML/include/SFML/System/Vector3.inl:
+
 ../SFML/include/SFML/Graphics/Sprite.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityInternal.h:
+
+../glm/glm/detail/type_mat2x2.hpp:
 
 ../SFML/include/SFML/Graphics/Shader.hpp:
 
+../glm/glm/detail/type_vec4.hpp:
+
+../glm/glm/ext/vector_int2_sized.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctermid.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_off_t.h:
+
 ../SFML/include/SFML/Graphics/RenderWindow.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_timeval.h:
+
+../glm/glm/ext/vector_double4_precision.hpp:
+
+../SFML/include/SFML/System/Vector2.inl:
 
 ../SFML/include/SFML/Graphics/View.hpp:
 
 ../SFML/include/SFML/Graphics/RectangleShape.hpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_time_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint64_t.h:
+
+../glm/glm/detail/type_mat2x3.inl:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/optional:
 
 ../SFML/include/SFML/Graphics/Texture.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_def.h:
+
+../SFML/include/SFML/Window/WindowStyle.hpp:
 
 ../SFML/include/SFML/Graphics/VertexArray.hpp:
 
@@ -344,17 +705,33 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/Graphics/Rect.hpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_errno_t.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__tree:
 
 ../SFML/include/SFML/Graphics/Transform.hpp:
 
+../glm/glm/ext/vector_float4.hpp:
+
+../SFML/include/SFML/Window/WindowBase.hpp:
+
+../glm/glm/ext/vector_double2.hpp:
+
 ../SFML/include/SFML/Graphics/RenderStates.hpp:
 
+../glm/glm/ext/vector_bool4_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/math.h:
+
 ../SFML/include/SFML/Graphics/Drawable.hpp:
+
+../glm/glm/ext/matrix_double2x4.hpp:
 
 ../SFML/include/SFML/Graphics/Shape.hpp:
 
 ../SFML/include/SFML/Graphics/CircleShape.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
 ../SFML/include/SFML/Graphics/Export.hpp:
 
@@ -362,11 +739,13 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/Window/Vulkan.hpp:
 
-../SFML/include/SFML/Window/WindowBase.hpp:
-
 /Library/Developer/CommandLineTools/usr/include/c++/v1/vector:
 
 ../SFML/include/SFML/Window/VideoMode.hpp:
+
+../SFML/include/SFML/System/NonCopyable.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mode_t.h:
 
 ../SFML/include/SFML/Window/Sensor.hpp:
 
@@ -376,19 +755,19 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/Window/GlResource.hpp:
 
-../SFML/include/SFML/Window/WindowStyle.hpp:
-
 ../SFML/include/SFML/Window/Context.hpp:
 
 ../SFML/include/SFML/Graphics/Image.hpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_endian.h:
+
 ../SFML/include/SFML/Window/Export.hpp:
 
-../SFML/include/SFML/Window/Clipboard.hpp:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h:
 
 ../SFML/include/SFML/System/Vector3.hpp:
 
-../SFML/include/SFML/System/Vector2.inl:
+../glm/glm/detail/type_mat2x3.hpp:
 
 ../SFML/include/SFML/System/Vector2.hpp:
 
@@ -398,6 +777,8 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/System/Thread.inl:
 
+../SFML/include/SFML/System.hpp:
+
 ../SFML/include/SFML/Window/Event.hpp:
 
 ../SFML/include/SFML/System/Thread.hpp:
@@ -405,6 +786,8 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 ../SFML/include/SFML/System/String.inl:
 
 ../SFML/include/SFML/Graphics/ConvexShape.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_clr.h:
 
 ../SFML/include/SFML/System/Utf.inl:
 
@@ -414,39 +797,53 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/System/Sleep.hpp:
 
+../glm/glm/detail/func_packing.inl:
+
 ../SFML/include/SFML/System/Lock.hpp:
+
+../glm/glm/ext/matrix_float3x4.hpp:
 
 ../SFML/include/SFML/System/InputStream.hpp:
 
 ../SFML/include/SFML/System/Err.hpp:
 
+../SFML/include/SFML/Graphics/Glsl.inl:
+
 ../SFML/include/SFML/System/ThreadLocalPtr.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_time.h:
 
 ../SFML/include/SFML/Window.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:
 
+../glm/glm/ext/vector_int3_sized.hpp:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/istream:
 
 ../SFML/include/SFML/Graphics/RenderTarget.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_copy.h:
+../glm/glm/ext/vector_bool4.hpp:
 
-../SFML/include/SFML/Graphics/Glsl.inl:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_in_addr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_zero.h:
 
 ../SFML/include/SFML/Graphics/Font.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_clr.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_set.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_setsize.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_def.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int16_t.h:
+
+../glm/glm/matrix.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_useconds_t.h:
 
@@ -456,17 +853,25 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ino64_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_sigset_t.h:
+
 ../SFML/include/SFML/System/Time.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ino_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_in_addr_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/float.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_caddr_t.h:
 
+../glm/glm/ext/vector_uint2_sized.hpp:
+
 ../SFML/include/SFML/System/FileInputStream.hpp:
+
+../glm/glm/detail/type_mat4x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_char.h:
 
@@ -476,19 +881,21 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/random:
+../SFML/include/SFML/Graphics/Rect.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_string.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sched.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_nl_item.h:
 
+../SFML/include/SFML/Graphics/Glsl.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/nl_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/locale.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/cdefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mach_port_t.h:
 
@@ -498,9 +905,17 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/qos.h:
 
+/Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdint.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cstdlib:
+
 ../src/particleTest.cpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
@@ -510,9 +925,15 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread/pthread_impl.h:
+../glm/glm/detail/type_vec3.hpp:
+
+../glm/glm/vec3.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__nullptr:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__threading_support:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wchar_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ratio:
 
@@ -520,17 +941,23 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread/qos.h:
 
+../glm/glm/detail/compute_common.hpp:
+
 ../SFML/include/SFML/System/Export.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ucontext.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/functional:
+
+../SFML/include/SFML/Window/Touch.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/system_error:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_endian.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int32_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/chrono:
 
@@ -538,11 +965,9 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stdexcept:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/limits.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/limits.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/climits:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_short.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base:
 
@@ -550,19 +975,17 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/mutex:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mode_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_mcontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cctype:
 
-../SFML/include/SFML/Window/Touch.hpp:
-
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cwctype:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_off_t.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cstdint:
+
+../glm/glm/glm.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cwchar:
 
@@ -570,9 +993,19 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__functional_base:
 
+../glm/glm/ext/matrix_float3x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/new:
 
+../glm/glm/ext/vector_uint3_sized.hpp:
+
+../glm/glm/ext/matrix_float3x2_precision.hpp:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__undef_macros:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__errc:
+
+../glm/glm/ext/matrix_float2x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_dev_t.h:
 
@@ -581,8 +1014,6 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 /Library/Developer/CommandLineTools/usr/include/c++/v1/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint32_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/malloc/_malloc.h:
 
@@ -594,13 +1025,17 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/libkern/_OSByteOrder.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/endian.h:
-
-../SFML/include/SFML/Graphics/RenderTexture.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_isset.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/locale.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__config:
+
+../glm/glm/ext/matrix_double2x3.hpp:
+
+../glm/glm/mat2x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/__wctype.h:
 
 ../SFML/include/SFML/Window/WindowHandle.hpp:
 
@@ -608,59 +1043,75 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/wctype.h:
 
+../glm/glm/ext/vector_int3.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/endian.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/math.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_sigset_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ucontext.h:
+../glm/glm/ext/matrix_double2x2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_stdlib.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_sigaltstack.h:
 
-../SFML/include/SFML/System/NonCopyable.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_stdio.h:
 
+/Library/Developer/CommandLineTools/usr/include/c++/v1/wchar.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+../glm/glm/ext/vector_float2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/mach/i386/_structs.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits:
 
+../glm/glm/ext/matrix_double4x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread/sched.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/mach/machine/_structs.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdarg.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_mcontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/signal.h:
 
+../glm/glm/mat2x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/signal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/exception:
 
+../glm/glm/detail/type_vec4.inl:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/tuple:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_intmax_t.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_pid_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uintptr_t.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/limits.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/istream:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uintptr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/signal.h:
 
@@ -672,47 +1123,49 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/System/MemoryInputStream.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_time.h:
+../glm/glm/detail/func_matrix.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/stdio.h:
+
+../glm/glm/mat4x4.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/typeinfo:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_time_t.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/stdint.h:
+../glm/glm/ext/matrix_float2x3.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cstring:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/syslimits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/strings.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_stdio.h:
+../glm/glm/ext/vector_uint4_sized.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_wctype_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_errno_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/types.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/__wctype.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__nullptr:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_gid_t.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/cstdlib:
+../glm/glm/detail/type_mat2x2.inl:
 
-../SFML/include/SFML/System/Vector3.inl:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h:
+
+../glm/glm/ext/vector_float3_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/errno.h:
+
+../glm/glm/detail/type_mat3x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_blksize_t.h:
 
@@ -720,25 +1173,33 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__debug:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint16_t.h:
-
-../SFML/include/SFML/System.hpp:
-
 /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stddef.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_wctype.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ctime:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_wctrans_t.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/string:
+../glm/glm/ext/scalar_int_sized.hpp:
+
+../glm/glm/ext/vector_bool2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_in_port_t.h:
 
+../glm/glm/ext/vector_double4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/runetype.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__cxx_version:
 
+../glm/glm/ext/vector_uint2.hpp:
+
+../glm/glm/detail/type_mat3x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int8_t.h:
+
+../glm/glm/detail/type_mat4x4.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/utility:
 
@@ -746,75 +1207,69 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/syslimits.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
-
 ../SFML/include/SFML/Config.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_posix_availability.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:
+../SFML/include/SFML/Graphics/Glyph.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_id_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__string:
 
+../glm/glm/ext/vector_int4_sized.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_va_list.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_timeval.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_wctype.h:
+
+../glm/glm/detail/type_half.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rune_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/assert.h:
+../glm/glm/mat3x4.hpp:
+
+../glm/glm/detail/setup.hpp:
 
 ../SFML/include/SFML/Window/Window.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/__wctype.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/cstdint:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/runetype.h:
+../glm/glm/ext/matrix_float2x4.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h:
-
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ctype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uid_t.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h:
+../glm/glm/ext/matrix_float3x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_timespec.h:
 
 ../SFML/include/SFML/Graphics/Color.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/math.h:
+../glm/glm/ext/scalar_uint_sized.hpp:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/wchar.h:
+../glm/glm/geometric.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdio.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread.h:
-
-../SFML/include/SFML/Graphics/Rect.inl:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_suseconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uintmax_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int32_t.h:
+../glm/glm/ext/matrix_double3x3.hpp:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/map:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_clock_t.h:
+../glm/glm/detail/func_geometric.inl:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__errc:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_clock_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/memory:
 
@@ -826,21 +1281,11 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/limits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctermid.h:
-
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cstdio:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_null.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdarg.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/limits:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/resource.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int64_t.h:
 
@@ -848,19 +1293,13 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mbstate_t.h:
 
-../SFML/include/SFML/Graphics/Glsl.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ct_rune_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wchar_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_size_t.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/limits.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/wctype.h:
 
@@ -868,33 +1307,27 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 ../SFML/include/SFML/System/Mutex.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int8_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int32_t.h:
 
+../glm/glm/vec2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/ctype.h:
+
+../glm/glm/ext/matrix_double3x3_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_wchar.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/locale:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_wctrans_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/string.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_id_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityInternal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ios:
 
+../glm/glm/detail/type_vec3.inl:
+
 ../SFML/include/SFML/Window/Mouse.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int64_t.h:
-
-../SFML/include/SFML/Graphics/Glyph.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/wchar.h:
 
@@ -905,8 +1338,6 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 ../SFML/include/SFML/Graphics.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityVersions.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
@@ -924,20 +1355,16 @@ CMakeFiles/learnSFML.dir/src/particleTest.cpp.o: ../src/particleTest.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/appleapiopts.h:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__config:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_short.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_wchar.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/cdefs.h:
+../glm/glm/ext/vector_double2_precision.hpp:
+
+../glm/glm/detail/type_mat3x4.inl:
+
+../glm/glm/ext/vector_bool2_precision.hpp:
 
 ../SFML/include/SFML/Graphics/PrimitiveType.hpp:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:
