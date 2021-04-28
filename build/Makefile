@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/snow.o: src/snow.cpp.o
-.PHONY : src/snow.o
+src/chaser.o: src/chaser.cpp.o
+.PHONY : src/chaser.o
 
 # target to build an object file
-src/snow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.o
-.PHONY : src/snow.cpp.o
+src/chaser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.o
+.PHONY : src/chaser.cpp.o
 
-src/snow.i: src/snow.cpp.i
-.PHONY : src/snow.i
+src/chaser.i: src/chaser.cpp.i
+.PHONY : src/chaser.i
 
 # target to preprocess a source file
-src/snow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.i
-.PHONY : src/snow.cpp.i
+src/chaser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.i
+.PHONY : src/chaser.cpp.i
 
-src/snow.s: src/snow.cpp.s
-.PHONY : src/snow.s
+src/chaser.s: src/chaser.cpp.s
+.PHONY : src/chaser.s
 
 # target to generate assembly for a file
-src/snow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/snow.cpp.s
-.PHONY : src/snow.cpp.s
+src/chaser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.s
+.PHONY : src/chaser.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/snow.o"
-	@echo "... src/snow.i"
-	@echo "... src/snow.s"
+	@echo "... src/chaser.o"
+	@echo "... src/chaser.i"
+	@echo "... src/chaser.s"
 .PHONY : help
 
 

@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-    src/snow.cpp
+src/chaser.cpp
 )
 
 add_executable(learnSFML ${SOURCES})
