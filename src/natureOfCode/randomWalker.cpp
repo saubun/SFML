@@ -1,20 +1,46 @@
 #define SFML_NO_DEPRECATED_WARNINGS
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include <vector>
 #include <random.hpp>
 
 using Random = effolkronium::random_static;
 
-unsigned int SCR_WIDTH = 1920;
-unsigned int SCR_HEIGHT = 1080;
+unsigned int SCR_WIDTH = 1024;
+unsigned int SCR_HEIGHT = 768;
 
-unsigned int FPS = 10;
+unsigned int FPS = 60;
+
+class Walker
+{
+private:
+    sf::RectangleShape entity;
+    sf::Vector2f position;
+    sf::Vector2f velocity;
+
+public:
+    Walker(float x, float y)
+    {
+        this->entity = sf::RectangleShape(sf::Vector2f(5, 5));
+        this->entity.setPosition(x, y);
+    }
+
+    void update()
+    {
+        this->position = this->entity.getPosition();
+        this->velocity = sf::Vector2f(Random::get(-1, 1), Random::get(-1, 1));
+        this->entity.move(this->velocity);
+    }
+
+    sf::RectangleShape getEntity()
+    {
+        return this->entity;
+    }
+};
 
 int main()
 {
     // Create loop
-    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "<name>", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Random Walk", sf::Style::Default);
 
     // Time
     sf::Clock clock;
@@ -22,6 +48,9 @@ int main()
 
     // FPS
     window.setFramerateLimit(FPS);
+
+    // Walker
+    Walker walker(SCR_WIDTH / 2, SCR_HEIGHT / 2);
 
     // Main Loop
     while (window.isOpen())
@@ -55,8 +84,12 @@ int main()
             }
         }
 
-        // Reset display
+        // Clear
         window.clear(sf::Color::Black);
+
+        // Draw
+        walker.update();
+        window.draw(walker.getEntity());
 
         // Swap buffers
         window.display();

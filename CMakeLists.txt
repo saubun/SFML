@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-src/chaser.cpp
+    src/gravity.cpp
 )
 
 add_executable(learnSFML ${SOURCES})

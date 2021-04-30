@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/chaser.o: src/chaser.cpp.o
-.PHONY : src/chaser.o
+src/gravity.o: src/gravity.cpp.o
+.PHONY : src/gravity.o
 
 # target to build an object file
-src/chaser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.o
-.PHONY : src/chaser.cpp.o
+src/gravity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.o
+.PHONY : src/gravity.cpp.o
 
-src/chaser.i: src/chaser.cpp.i
-.PHONY : src/chaser.i
+src/gravity.i: src/gravity.cpp.i
+.PHONY : src/gravity.i
 
 # target to preprocess a source file
-src/chaser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.i
-.PHONY : src/chaser.cpp.i
+src/gravity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.i
+.PHONY : src/gravity.cpp.i
 
-src/chaser.s: src/chaser.cpp.s
-.PHONY : src/chaser.s
+src/gravity.s: src/gravity.cpp.s
+.PHONY : src/gravity.s
 
 # target to generate assembly for a file
-src/chaser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/chaser.cpp.s
-.PHONY : src/chaser.cpp.s
+src/gravity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.s
+.PHONY : src/gravity.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/chaser.o"
-	@echo "... src/chaser.i"
-	@echo "... src/chaser.s"
+	@echo "... src/gravity.o"
+	@echo "... src/gravity.i"
+	@echo "... src/gravity.s"
 .PHONY : help
 
 

@@ -6,15 +6,15 @@
 
 using Random = effolkronium::random_static;
 
-unsigned int SCR_WIDTH = 1920;
-unsigned int SCR_HEIGHT = 1080;
+unsigned int SCR_WIDTH = 1024;
+unsigned int SCR_HEIGHT = 768;
 
-unsigned int FPS = 10;
+unsigned int FPS = 60;
 
 int main()
 {
     // Create loop
-    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "<name>", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Random Noise", sf::Style::Default);
 
     // Time
     sf::Clock clock;
@@ -57,6 +57,18 @@ int main()
 
         // Reset display
         window.clear(sf::Color::Black);
+
+        int size = 10;
+        for (int i = 0; i < SCR_WIDTH; i += size)
+        {
+            for (int j = 0; j < SCR_HEIGHT; j += size)
+            {
+                sf::RectangleShape rect(sf::Vector2f(size, size));
+                rect.setPosition(i, j);
+                rect.setFillColor(sf::Color(255, 255, 255, 255 * Random::get(0, 1) / Random::get(1, 10)));
+                window.draw(rect);
+            }
+        }
 
         // Swap buffers
         window.display();
