@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-    src/gravity.cpp
+    src/natureOfCode/2/gravity.cpp
 )
 
 add_executable(learnSFML ${SOURCES})

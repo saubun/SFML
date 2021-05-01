@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/gravity.o: src/gravity.cpp.o
-.PHONY : src/gravity.o
+src/natureOfCode/2/gravity.o: src/natureOfCode/2/gravity.cpp.o
+.PHONY : src/natureOfCode/2/gravity.o
 
 # target to build an object file
-src/gravity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.o
-.PHONY : src/gravity.cpp.o
+src/natureOfCode/2/gravity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.o
+.PHONY : src/natureOfCode/2/gravity.cpp.o
 
-src/gravity.i: src/gravity.cpp.i
-.PHONY : src/gravity.i
+src/natureOfCode/2/gravity.i: src/natureOfCode/2/gravity.cpp.i
+.PHONY : src/natureOfCode/2/gravity.i
 
 # target to preprocess a source file
-src/gravity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.i
-.PHONY : src/gravity.cpp.i
+src/natureOfCode/2/gravity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.i
+.PHONY : src/natureOfCode/2/gravity.cpp.i
 
-src/gravity.s: src/gravity.cpp.s
-.PHONY : src/gravity.s
+src/natureOfCode/2/gravity.s: src/natureOfCode/2/gravity.cpp.s
+.PHONY : src/natureOfCode/2/gravity.s
 
 # target to generate assembly for a file
-src/gravity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/gravity.cpp.s
-.PHONY : src/gravity.cpp.s
+src/natureOfCode/2/gravity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.s
+.PHONY : src/natureOfCode/2/gravity.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/gravity.o"
-	@echo "... src/gravity.i"
-	@echo "... src/gravity.s"
+	@echo "... src/natureOfCode/2/gravity.o"
+	@echo "... src/natureOfCode/2/gravity.i"
+	@echo "... src/natureOfCode/2/gravity.s"
 .PHONY : help
 
 

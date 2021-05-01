@@ -25,31 +25,34 @@ class Walker
 {
 private:
     sf::CircleShape entity;
-    sf::Vector2f position;
     sf::Vector2f mousePos;
     sf::Vector2f velocity;
+    sf::Vector2f acceleration;
+    sf::Vector2f displacement;
 
 public:
     Walker(float x, float y)
     {
-        this->entity = sf::CircleShape(10);
+        this->entity = sf::CircleShape(40);
         this->entity.setPosition(x, y);
         this->mousePos = sf::Vector2f(0, 0);
         this->velocity = sf::Vector2f(0, 0);
     }
 
+    // A = F / M (Mass is 1)
+    void applyForce(sf::Vector2f force)
+    {
+        this->acceleration += force;
+    }
+
     void update()
     {
-        // Update var
-        this->position = this->entity.getPosition();
-
-        // Calculate velocity
-        sf::Vector2f displacement = this->mousePos - this->position;
-        sf::Vector2f direction = getNormalized(displacement);
-        sf::Vector2f acceleration = getNormalized(displacement) * 0.1f;
-        this->velocity += acceleration;
+        // Chase mouse
+        this->displacement = this->mousePos - this->entity.getPosition();
+        this->applyForce(getNormalized(displacement) * 0.001f);
 
         // Update position
+        this->velocity += this->acceleration;
         this->entity.move(this->velocity);
     }
 
@@ -78,7 +81,6 @@ int main()
 
     // Walker
     Walker walker(SCR_WIDTH / 2, SCR_HEIGHT / 2);
-    window.setMouseCursorVisible(false);
 
     // Main Loop
     while (window.isOpen())
@@ -119,11 +121,6 @@ int main()
         walker.setMousePos(sf::Vector2f(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y));
         walker.update();
         window.draw(walker.getEntity());
-
-        // Draw cursor
-        sf::CircleShape cursor(10);
-        cursor.setPosition(sf::Vector2f(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y));
-        window.draw(cursor);
 
         // Swap buffers
         window.display();
