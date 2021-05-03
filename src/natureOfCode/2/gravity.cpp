@@ -10,7 +10,13 @@ using Random = effolkronium::random_static;
 unsigned int SCR_WIDTH = 1920;
 unsigned int SCR_HEIGHT = 1080;
 
-unsigned int FPS = 60;
+const unsigned int FPS = 60;
+
+const unsigned int ATTRACTOR_COUNT = 30;
+const sf::Color ATTRACTOR_COLOR = sf::Color::Green;
+const sf::Color LINE_COLOR = sf::Color::White;
+const bool LINES = false;
+const bool WALL_BORDERS = false;
 
 float getMagnitude(sf::Vector2f vec)
 {
@@ -44,8 +50,8 @@ public:
     Attractor(float x, float y, float mass)
     {
         this->mass = mass;
-        this->entity = sf::CircleShape(sqrtf(this->mass) * 20);
-        this->entity.setFillColor(sf::Color::Green);
+        this->entity = sf::CircleShape(sqrtf(this->mass));
+        this->entity.setFillColor(ATTRACTOR_COLOR);
         this->entity.setPosition(x, y);
         this->velocity = sf::Vector2f(0, 0);
         this->entity.setOrigin(this->entity.getRadius(), this->entity.getRadius());
@@ -121,11 +127,11 @@ public:
     {
         sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
         float distance = getMagnitude(displacement);
-        distance = std::clamp(distance, this->entity.getRadius() * 4.0f, 1000.0f);
-        float G = -100.0f;
+        distance = std::clamp(distance, this->entity.getRadius() * 8.0f, 200.0f);
+        float G = 5.0f;
         float forceMag = ((this->mass * attractor.mass) / powf(distance, 2.0f)) * G;
         sf::Vector2f gravity = getSetMagnitude(displacement, forceMag);
-        this->applyForce(gravity);
+        this->applyForce(-gravity);
     }
 
     // Detect collision with another attractor
@@ -136,12 +142,23 @@ public:
 
         if (distance <= this->entity.getRadius() + attractor.entity.getRadius())
         {
-            this->velocity += getNormalized(displacement);
+            this->velocity += getSetMagnitude(displacement, 1.0f);
             this->friction(attractor);
             this->dragForce(attractor);
         }
     }
 };
+
+// Reset the attractors vector
+void resetAttractors(std::vector<Attractor> &vec)
+{
+    vec.clear();
+    for (unsigned int x = 0; x < ATTRACTOR_COUNT; x++)
+    {
+        vec.push_back(
+            Attractor((float)Random::get(0, (int)SCR_WIDTH), (float)Random::get(0, (int)SCR_HEIGHT), (float)Random::get(50, 200)));
+    }
+}
 
 int main()
 {
@@ -157,12 +174,7 @@ int main()
 
     // Attractor
     std::vector<Attractor> attractors;
-    for (unsigned int x = 0; x < 3; x++)
-    {
-        attractors.push_back(
-            Attractor((float)Random::get(0, (int)SCR_WIDTH), (float)Random::get(0, (int)SCR_HEIGHT), (float)Random::get(10, 20) / 10) // :3
-        );
-    }
+    resetAttractors(attractors);
 
     // Main Loop
     while (window.isOpen())
@@ -183,8 +195,14 @@ int main()
                 window.close();
                 break;
             case sf::Event::KeyPressed:
+                // Close window
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
                     window.close();
+
+                // Reset
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::R))
+                    resetAttractors(attractors);
+
                 break;
             case sf::Event::MouseButtonPressed:
                 break;
@@ -199,24 +217,36 @@ int main()
         // For every attractor
         for (int x = 0; x < attractors.size(); x++)
         {
-            // Apply gravity
+            // For every other attractor
             for (int y = 0; y < attractors.size(); y++)
             {
                 if (x != y)
                 {
-                    attractors.at(x).collide(attractors.at(y));
+                    // Apply gravity
                     attractors.at(x).attract(attractors.at(y));
+
+                    // Apply collisions
+                    // attractors.at(x).collide(attractors.at(y));
+
+                    // Draw lines between attractors
+                    if (LINES)
+                    {
+                        sf::Vertex line[] = {sf::Vertex(attractors.at(x).entity.getPosition(), LINE_COLOR),
+                                             sf::Vertex(attractors.at(y).entity.getPosition(), LINE_COLOR)};
+                        window.draw(line, 2, sf::Lines);
+                    }
                 }
             }
 
-            // Draw attractor
-            window.draw(attractors.at(x).entity);
-
             // Border check
-            attractors.at(x).bounce();
+            if (WALL_BORDERS)
+                attractors.at(x).bounce();
 
             // Update forces
             attractors.at(x).update();
+
+            // Draw attractor
+            window.draw(attractors.at(x).entity);
         }
 
         // Swap buffers
