@@ -39,7 +39,6 @@ public:
     sf::CircleShape entity;
     sf::Vector2f velocity;
     sf::Vector2f acceleration;
-    sf::Vector2f displacement;
     float mass;
 
     Attractor(float x, float y, float mass)
@@ -92,13 +91,38 @@ public:
         this->acceleration = sf::Vector2f(0, 0);
     }
 
+    // Apply friction (F (force) = - 1 * Mu (friction coeff.) * N (normal force) * v̂ (direction))
+    void friction(Attractor attractor)
+    {
+        sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
+        sf::Vector2f direction = getNormalized(displacement) * -1.0f;
+        float mu = 0.1f;
+        float normalForce = this->mass;
+        sf::Vector2f fric = getSetMagnitude(direction, mu * normalForce);
+
+        this->applyForce(fric);
+    }
+
+    // Apply fluid drag ( F (drag force) = -(1/2) * ρ (density of fluid) * ||v||^2 (mag of velocity/speed) * A (surface area) * C (coeff. of drag) * v̂ (direction) )
+    void dragForce(Attractor attractor)
+    {
+        sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
+        sf::Vector2f drag = getNormalized(displacement) * -0.5f;
+        float c = 0.001f;
+        float speed = getMagnitude(this->velocity);
+        float surfaceArea = 0.314f * this->entity.getRadius();
+        setMagnitude(drag, c * powf(speed, 2.0f) * surfaceArea);
+
+        this->applyForce(drag);
+    }
+
     // Gravitationally attract to another attractor ( F = ((m1 * m2) / ||d||^2) * G )
     void attract(Attractor attractor)
     {
         sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
         float distance = getMagnitude(displacement);
-        distance = std::clamp(distance, 10.0f, 10000.0f);
-        float G = -10.0f;
+        distance = std::clamp(distance, this->entity.getRadius() * 4.0f, 1000.0f);
+        float G = -100.0f;
         float forceMag = ((this->mass * attractor.mass) / powf(distance, 2.0f)) * G;
         sf::Vector2f gravity = getSetMagnitude(displacement, forceMag);
         this->applyForce(gravity);
@@ -110,8 +134,12 @@ public:
         sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
         float distance = getMagnitude(displacement);
 
-        if (distance < this->entity.getRadius() + attractor.entity.getRadius())
-            this->acceleration *= -1.0f;
+        if (distance <= this->entity.getRadius() + attractor.entity.getRadius())
+        {
+            this->velocity += getNormalized(displacement);
+            this->friction(attractor);
+            this->dragForce(attractor);
+        }
     }
 };
 
@@ -129,10 +157,10 @@ int main()
 
     // Attractor
     std::vector<Attractor> attractors;
-    for (unsigned int x = 0; x < 50; x++)
+    for (unsigned int x = 0; x < 3; x++)
     {
         attractors.push_back(
-            Attractor((float)Random::get(0, (int)SCR_WIDTH), (float)Random::get(0, (int)SCR_HEIGHT), (float)Random::get(1, 20) / 10) // :3
+            Attractor((float)Random::get(0, (int)SCR_WIDTH), (float)Random::get(0, (int)SCR_HEIGHT), (float)Random::get(10, 20) / 10) // :3
         );
     }
 
@@ -154,12 +182,9 @@ int main()
             case sf::Event::Closed:
                 window.close();
                 break;
-
             case sf::Event::KeyPressed:
-                // End game
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
                     window.close();
-
                 break;
             case sf::Event::MouseButtonPressed:
                 break;
@@ -174,24 +199,24 @@ int main()
         // For every attractor
         for (int x = 0; x < attractors.size(); x++)
         {
-            // Update forces
-            attractors.at(x).update();
-
-            // Border check
-            attractors.at(x).bounce();
-
             // Apply gravity
             for (int y = 0; y < attractors.size(); y++)
             {
                 if (x != y)
                 {
-                    attractors.at(x).attract(attractors.at(y));
                     attractors.at(x).collide(attractors.at(y));
+                    attractors.at(x).attract(attractors.at(y));
                 }
             }
 
             // Draw attractor
             window.draw(attractors.at(x).entity);
+
+            // Border check
+            attractors.at(x).bounce();
+
+            // Update forces
+            attractors.at(x).update();
         }
 
         // Swap buffers
