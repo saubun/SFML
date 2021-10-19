@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-    src/natureOfCode/2/gravity.cpp
+src/new/graphing.cpp
 )
 
 add_executable(learnSFML ${SOURCES})
@@ -18,8 +18,6 @@ target_include_directories(learnSFML PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/
 
 
 target_link_libraries(learnSFML
-    sfml-graphics
-    sfml-window
     sfml-graphics
 )
 

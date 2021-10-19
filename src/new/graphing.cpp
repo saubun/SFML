@@ -14,7 +14,7 @@ unsigned int FPS = 30;
 int main()
 {
     // Create loop
-    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "<name>", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Basic Graphing", sf::Style::Default);
 
     // Time
     sf::Clock clock;

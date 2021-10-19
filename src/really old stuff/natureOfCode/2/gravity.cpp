@@ -10,18 +10,24 @@ using Random = effolkronium::random_static;
 unsigned int SCR_WIDTH = 1920;
 unsigned int SCR_HEIGHT = 1080;
 
-const unsigned int FPS = 60;
+unsigned int FPS = 60;
 
-const unsigned int ATTRACTOR_COUNT = 30;
-const sf::Color ATTRACTOR_COLOR = sf::Color::Green;
-const sf::Color LINE_COLOR = sf::Color::White;
-const bool LINES = false;
-const bool WALL_BORDERS = false;
+unsigned int ATTRACTOR_COUNT = 40;
+sf::Color ATTRACTOR_COLOR = sf::Color::Green;
+sf::Color LINE_COLOR = sf::Color::White;
+
+bool LINES = 0;
+bool WALL_BORDERS = 1;
+bool COLLISIONS = 0;
+bool REPEL_EACHOTHER = 0;
+
+float MASS_TO_RADIUS_RATIO = 1.0f;
+float G = 1.0f;
+float REPULSION_DISTANCE_MULTIPLIER = 5.0f;
 
 float getMagnitude(sf::Vector2f vec)
 {
-    float mag = sqrtf(pow(vec.x, 2) + pow(vec.y, 2));
-    return mag;
+    return sqrtf(pow(vec.x, 2) + pow(vec.y, 2));
 }
 
 sf::Vector2f getNormalized(sf::Vector2f vec)
@@ -50,7 +56,7 @@ public:
     Attractor(float x, float y, float mass)
     {
         this->mass = mass;
-        this->entity = sf::CircleShape(sqrtf(this->mass));
+        this->entity = sf::CircleShape(sqrtf(this->mass) * MASS_TO_RADIUS_RATIO);
         this->entity.setFillColor(ATTRACTOR_COLOR);
         this->entity.setPosition(x, y);
         this->velocity = sf::Vector2f(0, 0);
@@ -127,11 +133,24 @@ public:
     {
         sf::Vector2f displacement = this->entity.getPosition() - attractor.entity.getPosition();
         float distance = getMagnitude(displacement);
-        distance = std::clamp(distance, this->entity.getRadius() * 8.0f, 200.0f);
-        float G = 5.0f;
-        float forceMag = ((this->mass * attractor.mass) / powf(distance, 2.0f)) * G;
+        float forceMag = ((this->mass * attractor.mass) / powf(std::clamp(distance, this->entity.getRadius() * 8.0f, 200.0f), 2.0f)) * -G;
         sf::Vector2f gravity = getSetMagnitude(displacement, forceMag);
-        this->applyForce(-gravity);
+
+        if (REPEL_EACHOTHER)
+        {
+            if (distance <= (this->entity.getRadius() + attractor.entity.getRadius()) * REPULSION_DISTANCE_MULTIPLIER)
+            {
+                this->applyForce(-gravity);
+            }
+            else
+            {
+                this->applyForce(gravity);
+            }
+        }
+        else
+        {
+            this->applyForce(gravity);
+        }
     }
 
     // Detect collision with another attractor
@@ -142,9 +161,10 @@ public:
 
         if (distance <= this->entity.getRadius() + attractor.entity.getRadius())
         {
-            this->velocity += getSetMagnitude(displacement, 1.0f);
+            this->velocity += getSetMagnitude(displacement, getMagnitude(this->velocity) / 2.0f);
             this->friction(attractor);
             this->dragForce(attractor);
+            // std::cout << "Collision at (" << this->entity.getPosition().x << ", " << this->entity.getPosition().y << ")\n";
         }
     }
 };
@@ -226,7 +246,8 @@ int main()
                     attractors.at(x).attract(attractors.at(y));
 
                     // Apply collisions
-                    // attractors.at(x).collide(attractors.at(y));
+                    if (COLLISIONS)
+                        attractors.at(x).collide(attractors.at(y));
 
                     // Draw lines between attractors
                     if (LINES)
