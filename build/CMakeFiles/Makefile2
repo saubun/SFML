@@ -197,9 +197,9 @@ SFML/src/SFML/Window/clean: SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/clea
 # Target rules for target CMakeFiles/learnSFML.dir
 
 # All Build rule for target.
-CMakeFiles/learnSFML.dir/all: SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 CMakeFiles/learnSFML.dir/all: SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 CMakeFiles/learnSFML.dir/all: SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+CMakeFiles/learnSFML.dir/all: SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dameon0430/Documents/Dev/SFML/learno/build/CMakeFiles --progress-num=1 "Built target learnSFML"

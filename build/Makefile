@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/natureOfCode/2/gravity.o: src/natureOfCode/2/gravity.cpp.o
-.PHONY : src/natureOfCode/2/gravity.o
+src/new/graphing.o: src/new/graphing.cpp.o
+.PHONY : src/new/graphing.o
 
 # target to build an object file
-src/natureOfCode/2/gravity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.o
-.PHONY : src/natureOfCode/2/gravity.cpp.o
+src/new/graphing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o
+.PHONY : src/new/graphing.cpp.o
 
-src/natureOfCode/2/gravity.i: src/natureOfCode/2/gravity.cpp.i
-.PHONY : src/natureOfCode/2/gravity.i
+src/new/graphing.i: src/new/graphing.cpp.i
+.PHONY : src/new/graphing.i
 
 # target to preprocess a source file
-src/natureOfCode/2/gravity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.i
-.PHONY : src/natureOfCode/2/gravity.cpp.i
+src/new/graphing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.i
+.PHONY : src/new/graphing.cpp.i
 
-src/natureOfCode/2/gravity.s: src/natureOfCode/2/gravity.cpp.s
-.PHONY : src/natureOfCode/2/gravity.s
+src/new/graphing.s: src/new/graphing.cpp.s
+.PHONY : src/new/graphing.s
 
 # target to generate assembly for a file
-src/natureOfCode/2/gravity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.s
-.PHONY : src/natureOfCode/2/gravity.cpp.s
+src/new/graphing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.s
+.PHONY : src/new/graphing.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/natureOfCode/2/gravity.o"
-	@echo "... src/natureOfCode/2/gravity.i"
-	@echo "... src/natureOfCode/2/gravity.s"
+	@echo "... src/new/graphing.o"
+	@echo "... src/new/graphing.i"
+	@echo "... src/new/graphing.s"
 .PHONY : help
 
 

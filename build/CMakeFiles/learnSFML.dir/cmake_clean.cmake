@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.o"
-  "CMakeFiles/learnSFML.dir/src/natureOfCode/2/gravity.cpp.o.d"
+  "CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o"
+  "CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o.d"
   "learnSFML"
   "learnSFML.pdb"
 )
