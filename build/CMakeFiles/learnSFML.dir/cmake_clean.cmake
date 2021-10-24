@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o"
-  "CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o.d"
+  "CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o"
+  "CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o.d"
   "learnSFML"
   "learnSFML.pdb"
 )

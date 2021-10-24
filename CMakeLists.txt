@@ -7,7 +7,7 @@ add_subdirectory(SFML)
 
 
 set (SOURCES ${SOURCES}
-src/new/graphing.cpp
+src/new/TCT_Coding_Challenges/mitosis.cpp
 )
 
 add_executable(learnSFML ${SOURCES})

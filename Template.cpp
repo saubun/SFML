@@ -41,12 +41,7 @@ int main()
             case sf::Event::Closed:
                 window.close();
                 break;
-
             case sf::Event::KeyPressed:
-                // End game
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
-                    window.close();
-
                 break;
             case sf::Event::MouseButtonPressed:
                 break;

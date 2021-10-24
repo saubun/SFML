@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/new/graphing.o: src/new/graphing.cpp.o
-.PHONY : src/new/graphing.o
+src/new/TCT_Coding_Challenges/mitosis.o: src/new/TCT_Coding_Challenges/mitosis.cpp.o
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.o
 
 # target to build an object file
-src/new/graphing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.o
-.PHONY : src/new/graphing.cpp.o
+src/new/TCT_Coding_Challenges/mitosis.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.o
 
-src/new/graphing.i: src/new/graphing.cpp.i
-.PHONY : src/new/graphing.i
+src/new/TCT_Coding_Challenges/mitosis.i: src/new/TCT_Coding_Challenges/mitosis.cpp.i
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.i
 
 # target to preprocess a source file
-src/new/graphing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.i
-.PHONY : src/new/graphing.cpp.i
+src/new/TCT_Coding_Challenges/mitosis.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.i
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.i
 
-src/new/graphing.s: src/new/graphing.cpp.s
-.PHONY : src/new/graphing.s
+src/new/TCT_Coding_Challenges/mitosis.s: src/new/TCT_Coding_Challenges/mitosis.cpp.s
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.s
 
 # target to generate assembly for a file
-src/new/graphing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/graphing.cpp.s
-.PHONY : src/new/graphing.cpp.s
+src/new/TCT_Coding_Challenges/mitosis.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.s
+.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/new/graphing.o"
-	@echo "... src/new/graphing.i"
-	@echo "... src/new/graphing.s"
+	@echo "... src/new/TCT_Coding_Challenges/mitosis.o"
+	@echo "... src/new/TCT_Coding_Challenges/mitosis.i"
+	@echo "... src/new/TCT_Coding_Challenges/mitosis.s"
 .PHONY : help
 
 

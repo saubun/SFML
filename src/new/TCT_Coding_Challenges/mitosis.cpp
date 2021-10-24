@@ -9,7 +9,7 @@ using Random = effolkronium::random_static;
 unsigned int SCR_WIDTH = 1920;
 unsigned int SCR_HEIGHT = 1080;
 
-unsigned int FPS = 1000;
+unsigned int FPS = 60;
 
 /* ------------ Vector moditioncations ------------ */
 
@@ -43,26 +43,47 @@ sf::Vector2f vec2iToVec2f(sf::Vector2i veci)
     return sf::Vector2f(veci.x, veci.y);
 }
 
-/* ------------ Drawable Point ------------ */
-
-struct Point
+float distance(sf::Vector2f vec1, sf::Vector2f vec2)
 {
-    sf::CircleShape shape;
+    return sqrtf(pow(vec2.x - vec1.x, 2) + pow(vec2.y - vec1.y, 2));
+}
 
-    Point(sf::Vector2f pos, unsigned int size)
+// Cell Object
+struct Cell
+{
+    unsigned int radius = 100;
+    sf::CircleShape self;
+
+    Cell(sf::Vector2f pos = {(float)SCR_WIDTH / 2, (float)SCR_HEIGHT / 2})
     {
-        this->shape = sf::CircleShape(size);
-        this->shape.setOrigin(sf::Vector2f(size, size));
-        this->shape.setPosition(pos);
-    };
-};
+        this->self = sf::CircleShape(this->radius);
+        this->self.setPosition(pos);
+        this->self.setOrigin(this->radius, this->radius);
+    }
 
-/* ------------ Main Function ------------ */
+    void move()
+    {
+        sf::Vector2f vel = sf::Vector2f(Random::get(0, 1), Random::get(0, 1));
+        this->self.move(vel);
+    }
+
+    void update()
+    {
+    }
+
+    bool isClicked(sf::Vector2f mousePos)
+    {
+        if (distance(this->self.getPosition(), mousePos) <= this->radius)
+            return true;
+        else
+            return false;
+    }
+};
 
 int main()
 {
     // Create loop
-    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Basic Graphing", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Mitosis", sf::Style::Default);
 
     // Time
     sf::Clock clock;
@@ -71,8 +92,9 @@ int main()
     // FPS
     window.setFramerateLimit(FPS);
 
-    // List of points
-    std::vector<Point> points = {};
+    // List of Cells
+    std::vector<Cell> cells = {};
+    cells.push_back(Cell());
 
     // Main Loop
     while (window.isOpen())
@@ -93,8 +115,6 @@ int main()
                 window.close();
                 break;
             case sf::Event::KeyPressed:
-                if (windowEvent.key.code == sf::Keyboard::Space)
-                    points.clear();
                 break;
             case sf::Event::MouseButtonPressed:
                 break;
@@ -106,14 +126,24 @@ int main()
         // Reset display
         window.clear(sf::Color::Black);
 
-        // Instatiate a new point at mouse position
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-            points.push_back(Point(vec2iToVec2f(sf::Mouse::getPosition(window)), 10));
-
-        // Draw all points
-        for (auto x : points)
+        // Draw cells
+        for (Cell cell : cells)
         {
-            window.draw(x.shape);
+            cell.move();
+            cell.update();
+
+            window.draw(cell.self);
+        }
+
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+        {
+            for (Cell cell : cells)
+            {
+                if (cell.isClicked(vec2iToVec2f(sf::Mouse::getPosition(window))))
+                {
+                    std::cout << "Clicked at " << time << "\n";
+                }
+            }
         }
 
         // Swap buffers
