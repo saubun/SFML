@@ -11,6 +11,8 @@ unsigned int SCR_HEIGHT = 1080;
 
 unsigned int FPS = 60;
 
+unsigned int initialSize = 50;
+
 /* ------------ Vector moditioncations ------------ */
 
 float getMagnitude(sf::Vector2f vec)
@@ -146,7 +148,7 @@ struct Cell
         else
         {
             // This can make them attract
-            // this->applyForce(getSetMagnitude(-displacement, getMagnitude(this->velocity) * 2.0f));
+            this->applyForce(getSetMagnitude(-displacement, getMagnitude(this->velocity) * 2.0f));
         }
 
         // ...
@@ -168,7 +170,7 @@ int main()
 
     // List of Cells
     std::vector<Cell> cells = {};
-    cells.push_back(Cell(100, {(float)SCR_WIDTH / 2, (float)SCR_HEIGHT / 2}));
+    cells.push_back(Cell(initialSize, {(float)SCR_WIDTH / 2, (float)SCR_HEIGHT / 2}));
 
     // Main Loop
     while (window.isOpen())

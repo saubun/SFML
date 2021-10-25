@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/dameon0430/Documents/Dev/SFML/learno/src/new/TCT_Coding_Challenges/mitosis.cpp" "CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o" "gcc" "CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o.d"
+  "/Users/dameon0430/Documents/Dev/SFML/learno/src/new/cells.cpp" "CMakeFiles/learnSFML.dir/src/new/cells.cpp.o" "gcc" "CMakeFiles/learnSFML.dir/src/new/cells.cpp.o.d"
   )
 
 # Targets to which this target links.

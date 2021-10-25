@@ -259,29 +259,29 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/new/TCT_Coding_Challenges/mitosis.o: src/new/TCT_Coding_Challenges/mitosis.cpp.o
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.o
+src/new/cells.o: src/new/cells.cpp.o
+.PHONY : src/new/cells.o
 
 # target to build an object file
-src/new/TCT_Coding_Challenges/mitosis.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.o
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.o
+src/new/cells.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/cells.cpp.o
+.PHONY : src/new/cells.cpp.o
 
-src/new/TCT_Coding_Challenges/mitosis.i: src/new/TCT_Coding_Challenges/mitosis.cpp.i
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.i
+src/new/cells.i: src/new/cells.cpp.i
+.PHONY : src/new/cells.i
 
 # target to preprocess a source file
-src/new/TCT_Coding_Challenges/mitosis.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.i
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.i
+src/new/cells.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/cells.cpp.i
+.PHONY : src/new/cells.cpp.i
 
-src/new/TCT_Coding_Challenges/mitosis.s: src/new/TCT_Coding_Challenges/mitosis.cpp.s
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.s
+src/new/cells.s: src/new/cells.cpp.s
+.PHONY : src/new/cells.s
 
 # target to generate assembly for a file
-src/new/TCT_Coding_Challenges/mitosis.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/TCT_Coding_Challenges/mitosis.cpp.s
-.PHONY : src/new/TCT_Coding_Challenges/mitosis.cpp.s
+src/new/cells.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learnSFML.dir/build.make CMakeFiles/learnSFML.dir/src/new/cells.cpp.s
+.PHONY : src/new/cells.cpp.s
 
 # Help Target
 help:
@@ -303,9 +303,9 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/new/TCT_Coding_Challenges/mitosis.o"
-	@echo "... src/new/TCT_Coding_Challenges/mitosis.i"
-	@echo "... src/new/TCT_Coding_Challenges/mitosis.s"
+	@echo "... src/new/cells.o"
+	@echo "... src/new/cells.i"
+	@echo "... src/new/cells.s"
 .PHONY : help
 
 
