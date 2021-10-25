@@ -51,26 +51,46 @@ float distance(sf::Vector2f vec1, sf::Vector2f vec2)
 // Cell Object
 struct Cell
 {
-    unsigned int radius = 100;
+    unsigned int radius;
     sf::CircleShape self;
+    sf::Vector2f velocity;
+    sf::Vector2f acceleration;
+    float mass;
 
-    Cell(sf::Vector2f pos = {(float)SCR_WIDTH / 2, (float)SCR_HEIGHT / 2})
+    Cell(unsigned int radius, sf::Vector2f pos)
     {
+        this->radius = radius;
+        this->mass = this->radius * 2;
         this->self = sf::CircleShape(this->radius);
         this->self.setPosition(pos);
         this->self.setOrigin(this->radius, this->radius);
+        this->velocity = sf::Vector2f(0, 0);
     }
 
-    void move()
-    {
-        sf::Vector2f vel = sf::Vector2f(Random::get(0, 1), Random::get(0, 1));
-        this->self.move(vel);
-    }
-
+    // Update any values every frame
     void update()
     {
+        // Update position
+        this->velocity += this->acceleration;    // Add aceleration to velocity
+        this->self.move(this->velocity);         // Move by current velocity
+        this->acceleration = sf::Vector2f(0, 0); // Reset acceleration
+
+        // Move randomly
+        sf::Vector2f vel = sf::Vector2f(Random::get(-5, 5), Random::get(-5, 5));
+        this->applyForce(vel);
+
+        // Make sure velocity doesnt go crazy (figure out how to do this)
+        // if (getMagnitude(this->velocity) > 10)
+        //     this->applyForce(this->velocity * -0.8f);
     }
 
+    // Apply any force to be added to the current acceleration
+    void applyForce(sf::Vector2f force)
+    {
+        this->acceleration += force / this->mass;
+    }
+
+    // Checks if mouse position is inside of cell
     bool isClicked(sf::Vector2f mousePos)
     {
         if (distance(this->self.getPosition(), mousePos) <= this->radius)
@@ -78,23 +98,77 @@ struct Cell
         else
             return false;
     }
+
+    // Bounce on borders
+    void bounce()
+    {
+        float r = this->self.getRadius();
+        if (this->self.getPosition().y <= r)
+        {
+            this->self.setPosition(this->self.getPosition().x, r);
+            this->velocity.y *= -1.0f;
+        }
+        if (this->self.getPosition().y >= SCR_HEIGHT - r)
+        {
+            this->self.setPosition(this->self.getPosition().x, SCR_HEIGHT - r);
+            this->velocity.y *= -1.0f;
+        }
+        if (this->self.getPosition().x <= r)
+        {
+            this->self.setPosition(r, this->self.getPosition().y);
+            this->velocity.x *= -1.0f;
+        }
+        if (this->self.getPosition().x >= SCR_WIDTH - r)
+        {
+            this->self.setPosition(SCR_WIDTH - r, this->self.getPosition().y);
+            this->velocity.x *= -1.0f;
+        }
+    }
+
+    void collideWithOtherCell(Cell cell)
+    {
+        // Displacement between cells
+        sf::Vector2f displacement = this->self.getPosition() - cell.self.getPosition();
+
+        // Apply force if colliding
+        if (getMagnitude(displacement) <= this->radius * 2 && getMagnitude(displacement) <= cell.radius * 2)
+        {
+            if (getMagnitude(displacement) == 0)
+            {
+                displacement = {(float)Random::get(-1, 1), (float)Random::get(-1, 1)};
+            }
+            else
+            {
+                // Repel
+                this->applyForce(getSetMagnitude(displacement, getMagnitude(this->velocity) * 10.0f));
+            }
+        }
+        else
+        {
+            // This can make them attract
+            // this->applyForce(getSetMagnitude(-displacement, getMagnitude(this->velocity) * 2.0f));
+        }
+
+        // ...
+    }
 };
 
 int main()
 {
     // Create loop
-    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "Mitosis", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(SCR_WIDTH, SCR_HEIGHT), "<name>", sf::Style::Default);
 
     // Time
     sf::Clock clock;
     sf::Clock deltaClock;
+    unsigned int splittingTimer = 0;
 
     // FPS
     window.setFramerateLimit(FPS);
 
     // List of Cells
     std::vector<Cell> cells = {};
-    cells.push_back(Cell());
+    cells.push_back(Cell(100, {(float)SCR_WIDTH / 2, (float)SCR_HEIGHT / 2}));
 
     // Main Loop
     while (window.isOpen())
@@ -104,6 +178,9 @@ int main()
 
         // Calculate deltaTime
         float deltaTime = deltaClock.restart().asSeconds();
+
+        // Update split timer
+        splittingTimer++;
 
         // Poll events on the main window
         sf::Event windowEvent;
@@ -126,24 +203,43 @@ int main()
         // Reset display
         window.clear(sf::Color::Black);
 
-        // Draw cells
-        for (Cell cell : cells)
+        // For every cell
+        for (unsigned int x = 0; x < cells.size(); x++)
         {
-            cell.move();
-            cell.update();
-
-            window.draw(cell.self);
-        }
-
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-        {
-            for (Cell cell : cells)
+            // Every other cell
+            for (unsigned int y = 0; y < cells.size(); y++)
             {
-                if (cell.isClicked(vec2iToVec2f(sf::Mouse::getPosition(window))))
+                if (x != y)
                 {
-                    std::cout << "Clicked at " << time << "\n";
+                    cells.at(x).collideWithOtherCell(cells.at(y));
                 }
             }
+
+            // If cell is clicked (can only check once per second)
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+            {
+                if (cells.at(x).isClicked(vec2iToVec2f(sf::Mouse::getPosition(window))) && splittingTimer > FPS / 3)
+                {
+                    // Split cell
+                    cells.push_back(Cell(cells.at(x).radius * 0.8, cells.at(x).self.getPosition()));
+                    cells.push_back(Cell(cells.at(x).radius * 0.8, cells.at(x).self.getPosition()));
+                    cells.erase(cells.begin() + x);
+
+                    // Reset splitting Timer
+                    splittingTimer = 0;
+
+                    // std::cout << "Clicked at " << time << "\n";
+                }
+            }
+
+            // Bounce on borders
+            cells.at(x).bounce();
+
+            // Update forces
+            cells.at(x).update();
+
+            // Draw cells
+            window.draw(cells.at(x).self);
         }
 
         // Swap buffers

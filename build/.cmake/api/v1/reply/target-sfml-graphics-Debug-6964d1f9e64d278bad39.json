@@ -196,11 +196,11 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
+			"id" : "sfml-window::@0daf25d7b5dd386fd904"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "sfml-window::@0daf25d7b5dd386fd904"
+			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
 		}
 	],
 	"folder" : 

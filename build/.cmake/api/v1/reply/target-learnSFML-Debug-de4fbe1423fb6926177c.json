@@ -108,15 +108,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "sfml-window::@0daf25d7b5dd386fd904"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-graphics::@b5d161fc85c1c0dd9373"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-system::@f1fd4bce49687b53ec1b"
 		}
 	],
 	"id" : "learnSFML::@6890427a1f51a3e7e1df",
